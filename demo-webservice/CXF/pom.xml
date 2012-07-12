@@ -1,0 +1,218 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.myjeeva.andromda.demo</groupId>
+        <artifactId>demo-webservice</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>demo-webservice-CXF</artifactId>
+    <packaging>war</packaging>
+    <name>Demo Project WebService CXF Web Services</name>
+    <dependencies>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+        </dependency>
+        <!--
+             Spring is directly included to override the version 2.0.5 cxf
+             brings in its own dependencies.  This is not strictly necessary but
+             just being shown to let you know how this is done.
+        -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+        </dependency>
+
+        <!-- Depending on your requirements you may need more or less modules from cxf -->
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-bundle</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.eclipse.jetty</groupId>
+                    <artifactId>jetty-server</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.eclipse.jetty</groupId>
+                    <artifactId>jetty-io</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.eclipse.jetty</groupId>
+                    <artifactId>jetty-continuation</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.eclipse.jetty</groupId>
+                    <artifactId>jetty-http</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <warSourceDirectory>src/main/webapp</warSourceDirectory>
+                    <excludes>**/*.java</excludes>
+                    <warName>${project.artifactId}</warName>
+                    <packagingExcludes>**/*.java,**/*.ref,**/andromda-*.jar,**/active*.jar,**/antlr*.jar,**/backport*.jar,**/bsh*.jar,**/*-pool.jar,**/cxf-rt*.jar,**/cxf-api*.jar,**/cxf-common*.jar,**/cxf-tools*.jar,**/dom4j*.jar,**/ehcache*.jar,**/geronimo-servlet*.jar,**/geronimo-jms*.jar,**/groovy*.jar,**/jaxb-xjc*.jar,**/jetty*.jar,**/jaxen*.jar,**/jdom*.jar,**/qdox*.jar,**/spring-2.0.8.jar,**/xalan*.jar,**/xerces*.jar, **/xml-api*.jar,**/xmlbean*.jar,**/xmlsec*.jar</packagingExcludes>
+                </configuration>
+            </plugin>
+            <!-- Run the generated buildWS ant script which runs CXF wsdl2java and java2ws -->
+            <plugin>
+              <artifactId>maven-antrun-plugin</artifactId>
+              <executions>
+                <!-- Generated ant script runs java2ws for each service -->
+                <execution>
+                  <id>buildWS</id>
+                  <phase>generate-sources</phase>
+                  <configuration>
+                    <target>
+                        <property name="build.compiler" value="extJavac"/>
+                        <property name="andromda.project" value="${andromda.project}"/>
+                        <property name="project" value="${project.basedir}/.."/>
+                        <property name="compile_classpath" refid="maven.compile.classpath"/>
+                        <property name="runtime_classpath" refid="maven.runtime.classpath"/>
+                        <property name="test_classpath" refid="maven.test.classpath"/>
+                        <ant antfile="${project.basedir}/../webservice/buildWS.xml">
+                            <target name="wsdlgenall"/>
+                        </ant>
+                    </target>
+                  </configuration>
+                  <goals>
+                    <goal>run</goal>
+                  </goals>
+                </execution>
+              </executions>
+            </plugin>
+            <!-- See http://wiki.eclipse.org/Jetty/Reference and http://docs.codehaus.org/display/JETTY/Maven+Jetty+Plugin -->
+            <!-- Must start webservice server project from CXF client project in order to execute all phases properly in a single project -->
+            <!-- All phases before test-compile executed twice, see https://bugs.eclipse.org/bugs/show_bug.cgi?id=342643 -->
+            <plugin>
+                <groupId>org.mortbay.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <configuration>
+                    <connectors>
+                       <connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
+                          <port>${service.port}</port>
+                          <maxIdleTime>60000</maxIdleTime>
+                       </connector>
+                    </connectors>
+                    <webAppSourceDirectory>${project.parent.basedir}/webservice/src/main/webapp</webAppSourceDirectory>
+                    <webAppConfig>
+                        <overrideDescriptor>${project.parent.basedir}/webservice/src/main/webapp/WEB-INF/web.xml</overrideDescriptor>
+                        <contextPath>/${project.parent.artifactId}-webservice</contextPath>
+                    </webAppConfig>
+                    <connectors>
+                       <connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
+                          <port>${service.port}</port>
+                          <maxIdleTime>60000</maxIdleTime>
+                       </connector>
+                     </connectors>
+                    <useTestClasspath>true</useTestClasspath>
+                    <scanIntervalSeconds>10</scanIntervalSeconds>
+                    <stopKey>foo</stopKey>
+                    <stopPort>9999</stopPort>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>start-jetty</id>
+                        <phase>pre-integration-test</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <scanIntervalSeconds>0</scanIntervalSeconds>
+                            <daemon>true</daemon>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>stop-jetty</id>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>stop</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- Run integration tests *ITCase.java against running Jetty server in the webservice project -->
+            <!-- See http://docs.codehaus.org/display/MAVENUSER/Maven+and+Integration+Testing -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>2.12</version>
+                <configuration>
+                    <parallel>methods</parallel>
+                    <threadCount>5</threadCount>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>integration-test</id>
+                        <phase>integration-test</phase>
+                        <goals>
+                            <goal>integration-test</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>verify</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-source-plugin</artifactId>
+            </plugin>
+        </plugins>
+        <pluginManagement>
+        	<plugins>
+        		<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+        		<plugin>
+        			<groupId>org.eclipse.m2e</groupId>
+        			<artifactId>lifecycle-mapping</artifactId>
+        			<version>1.0.0</version>
+        			<configuration>
+        				<lifecycleMappingMetadata>
+        					<pluginExecutions>
+        						<pluginExecution>
+        							<pluginExecutionFilter>
+        								<groupId>org.apache.maven.plugins</groupId>
+        								<artifactId>maven-antrun-plugin</artifactId>
+        								<versionRange>[1.6,)</versionRange>
+        								<goals>
+        									<goal>run</goal>
+        								</goals>
+        							</pluginExecutionFilter>
+        							<action>
+        								<ignore></ignore>
+        							</action>
+        						</pluginExecution>
+        					</pluginExecutions>
+        				</lifecycleMappingMetadata>
+        			</configuration>
+        		</plugin>
+        	</plugins>
+        </pluginManagement>
+    </build>
+    <properties>
+        <andromda.project>${project.basedir}/..</andromda.project>
+    </properties>
+</project>
