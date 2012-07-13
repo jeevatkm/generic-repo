@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    This is used to map merge patterns in files generated
+    by spring cartridge to new patterns. Just add content to the
+    CDATA sections of the <to/> elements in order to
+    use the following merge points.
+-->
+<mappings name="SpringMerge">
+    <mapping>
+        <from><![CDATA[<!-- applicationContext hibernateProperties merge-point -->]]></from>
+        <to>
+            <![CDATA[
+                <!-- add specific (non-supported in the Spring cartridge) hibernate properties here -->
+            ]]>
+        </to>
+    </mapping>
+</mappings>
