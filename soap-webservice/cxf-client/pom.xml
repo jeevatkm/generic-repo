@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+        author  : <a href="jeeva@myjeeva.com">Jeevanandam Madanagopal</a>
+	website	: www.myjeeva.com
+        desc    : Creating web service client for ready to use
+-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+	<parent>
+        	<groupId>com.myjeeva.andromda.demo</groupId>
+        	<artifactId>soap-webservice</artifactId>
+        	<version>1.0-SNAPSHOT</version>
+    	</parent>
+
+	<name>cxf-client</name>
+	<artifactId>soap-webservice-cxf-client</artifactId>
+	<description>SOAP Web Service AndroMDA cxf-client</description>
+	<packaging>jar</packaging>
+
+	<properties>
+		<my.basedir>${basedir}</my.basedir>
+		<wsdl.path>${my.basedir}/../webservice/src/main/webapp/wsdl</wsdl.path>
+		<binding.path>${my.basedir}/../webservice/src/main/webapp/wsdl/bindings</binding.path>
+		<cxf.extensions.version>2.6.0</cxf.extensions.version>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.cxf</groupId>
+				<artifactId>cxf-codegen-plugin</artifactId>
+				<version>${cxf.version}</version>
+				<executions>
+				  <execution>
+				    <id>generate-sources</id>
+				    <phase>generate-sources</phase>
+				    <goals>
+				      <goal>wsdl2java</goal>
+				    </goals>
+				    <configuration>
+				      <sourceRoot>${my.basedir}/target/cxf-client/generated/</sourceRoot>
+				      <defaultOptions>
+				      	  <extraargs>
+				            <extraarg>-xjc-Xts,-Xts:style:simple</extraarg>
+				            <extraarg>-xjc-Xbg</extraarg>
+				            <extraarg>-xjc-Xdv</extraarg>
+				          </extraargs>
+				      </defaultOptions>
+				      <wsdlOptions>
+				        <wsdlOption>
+				          <wsdl>${wsdl.path}/SampleWebService.wsdl</wsdl>
+				          <bindingFiles>
+					        <bindingFile>${binding.path}/SampleWebService.xjb</bindingFile>
+					      </bindingFiles>
+				        </wsdlOption>
+				      </wsdlOptions>
+				    </configuration>
+				  </execution>
+				</executions>
+				<dependencies>
+				    <dependency>
+				        <groupId>org.apache.cxf</groupId>
+				        <artifactId>cxf-xjc-ts</artifactId>
+				        <version>2.2.12</version>
+				     </dependency>
+				     <dependency>
+				        <groupId>org.apache.cxf.xjcplugins</groupId>
+				        <artifactId>cxf-xjc-boolean</artifactId>
+				        <version>${cxf.extensions.version}</version>
+				     </dependency>
+				     <dependency>
+				        <groupId>org.apache.cxf.xjcplugins</groupId>
+				        <artifactId>cxf-xjc-dv</artifactId>
+				        <version>${cxf.extensions.version}</version>
+				     </dependency>
+				</dependencies>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-bundle</artifactId>
+            <exclusions>
+                <!-- Spring components cause classloader issue with Jetty test, just include spring bundle -->
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-core</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-beans</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-context</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-context-support</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-dao</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-jms</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-pool</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-tx</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-web</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
+</project>

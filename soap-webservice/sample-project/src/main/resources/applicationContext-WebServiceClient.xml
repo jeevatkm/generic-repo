@@ -1,0 +1,29 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:jaxws="http://cxf.apache.org/jaxws"
+        xmlns:cxf="http://cxf.apache.org/core"
+        xsi:schemaLocation="
+            http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+            http://jax-ws.dev.java.net/spring/core
+            http://jax-ws.dev.java.net/spring/core.xsd
+            http://jax-ws.dev.java.net/spring/servlet
+            http://jax-ws.dev.java.net/spring/servlet.xsd">
+
+<!-- Spring configuration for java client unit test. See http://cwiki.apache.org/CXF20DOC/how-do-i-develop-a-client.html -->
+
+<!-- Allows referencing Spring configuration files in locations other than directly on the classpath -->
+<!--
+<import resource="classpath:META-INF/cxf/cxf.xml"/>
+<import resource="classpath:META-INF/cxf/cxf-extension-soap.xml"/>
+-->
+
+  <bean id="sampleWebserviceServiceClient" class="com.myjeeva.andromda.demo.service.SampleWebServiceSEI"
+    factory-bean="sampleWebserviceServiceProxyFactory" factory-method="create" />
+  
+  <bean id="sampleWebserviceServiceProxyFactory" class="org.apache.cxf.jaxws.JaxWsProxyFactoryBean">
+    <property name="serviceClass" value="com.myjeeva.andromda.demo.service.SampleWebServiceSEI"/>
+        <property name="address" value="http://localhost:9090/soap-webservice-webservice/services/SampleWebService?wsdl"/>
+  </bean>
+</beans>
+ 

@@ -1,0 +1,1053 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<xmi:XMI xmlns:uml='http://www.omg.org/spec/UML/20110701' xmlns:xmi='http://www.omg.org/spec/XMI/20110701' xmlns:Validation_Profile='http://www.magicdraw.com/schemas/Validation_Profile.xmi' xmlns:andromda_xml='http://www.magicdraw.com/schemas/andromda_xml.xmi' xmlns:DSL_Customization='http://www.magicdraw.com/schemas/DSL_Customization.xmi' xmlns:Traceability_customization='http://www.magicdraw.com/schemas/Traceability_customization.xmi' xmlns:andromda_presentation='http://www.magicdraw.com/schemas/andromda_presentation.xmi' xmlns:StandardProfileL3='http://www.omg.org/spec/UML/20110701/StandardProfileL3' xmlns:MagicDraw_Profile='http://www.omg.org/spec/UML/20110701/MagicDrawProfile' xmlns:andromda_common='http://www.magicdraw.com/schemas/andromda_common.xmi' xmlns:andromda_messaging='http://www.magicdraw.com/schemas/andromda_messaging.xmi' xmlns:andromda_webservice='http://www.magicdraw.com/schemas/andromda_webservice.xmi' xmlns:andromda_persistence='http://www.magicdraw.com/schemas/andromda_persistence.xmi' xmlns:StandardProfileL2='http://www.omg.org/spec/UML/20110701/StandardProfileL2' xmlns:andromda_service='http://www.magicdraw.com/schemas/andromda_service.xmi' xmlns:andromda_process='http://www.magicdraw.com/schemas/andromda_process.xmi' xmlns:andromda_meta='http://www.magicdraw.com/schemas/andromda_meta.xmi'>
+	<xmi:Documentation>
+		<xmi:exporter>MagicDraw UML</xmi:exporter>
+		<xmi:exporterVersion>17.0.2</xmi:exporterVersion>
+	</xmi:Documentation>
+	<uml:Model xmi:type='uml:Model' xmi:id='eee_1045467100313_135436_1' name='AndroMDAModel'>
+		<xmi:Extension extender='MagicDraw UML 17.0.2'>
+			<moduleExtension ignoredInModule='true'/>
+		</xmi:Extension>
+		<ownedComment xmi:type='uml:Comment' xmi:id='_11_5_e240333_1154450477439_510234_1' body='Author:Jeevanandam Madanagopal.&#10;Created:01.08.06 18:41.&#10;Title:Sample AndroMDA Demo.&#10;Comment:&#10;www.myjeeva.com.&#10;'>
+			<annotatedElement xmi:idref='eee_1045467100313_135436_1'/>
+		</ownedComment>
+		<packagedElement xmi:type='uml:Package' xmi:id='_17_0_2_627020c_1342037555713_223110_2703' name='com.myjeeva.andromda.demo'>
+			<xmi:Extension extender='MagicDraw UML 17.0.2'>
+				<modelExtension>
+					<ownedDiagram xmi:type='uml:Diagram' xmi:id='_17_0_2_627020c_1342856412157_706866_2434' name='SampleDiagram' visibility='public' ownerOfDiagram='_17_0_2_627020c_1342037555713_223110_2703'>
+						<xmi:Extension extender='MagicDraw UML 17.0.2'>
+							<diagramRepresentation>
+								<diagram:DiagramRepresentationObject ID='_17_0_2_627020c_1342856412273_183947_2454' initialFrameSizeSet='true' requiredFeature=';UML_Standard_Profile.mdzip^UML_FEATURE' type='Class Diagram' umlType='Class Diagram' xmi:id='_TeJlINMHEeGHiK34BGSPTw' xmi:version='2.0' xmlns:binary='http://www.nomagic.com/ns/cameo/client/binary/1.0' xmlns:diagram='http://www.nomagic.com/ns/magicdraw/core/diagram/1.0' xmlns:xmi='http://www.omg.org/XMI' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+									<diagramContents contentHash='e1344cef-d40d-11e1-bb37-1dc00aa31f04' exporterName='MagicDraw UML' exporterVersion='17.0.2' xmi:id='_TeJlIdMHEeGHiK34BGSPTw'>
+										<binaryObject streamContentID='BINARY-6406a4bf-0935-4b0c-9339-eca4ba653901' xmi:id='_TeJlItMHEeGHiK34BGSPTw' xsi:type='binary:StreamIdentityBinaryObject'/>
+										<usedObjects href='#_17_0_2_627020c_1342856615601_75784_2598'/>
+										<usedObjects href='#_17_0_2_627020c_1342117215326_513076_2605'/>
+										<usedObjects href='#_17_0_2_627020c_1342114394187_989578_2442'/>
+										<usedObjects href='#_17_0_2_627020c_1342856412157_706866_2434'/>
+										<usedObjects href='#_17_0_2_627020c_1342117215327_594090_2606'/>
+										<usedObjects href='#_17_0_2_627020c_1342122944175_728950_2622'/>
+										<usedObjects href='#_17_0_2_627020c_1342122922746_402460_2620'/>
+										<usedObjects href='#_17_0_2_627020c_1342117383787_415604_2610'/>
+										<usedObjects href='#_17_0_2_627020c_1342856615600_686113_2596'/>
+										<usedObjects href='#_17_0_2_627020c_1342114387291_829821_2441'/>
+										<usedObjects href='#_17_0_2_627020c_1342117181473_261823_2601'/>
+										<usedObjects href='#_17_0_2_627020c_1342856615598_374250_2595'/>
+										<usedObjects href='#_17_0_2_627020c_1342856615601_939993_2597'/>
+										<usedObjects href='#_17_0_2_627020c_1342117200254_523808_2602'/>
+										<usedElements>_17_0_2_627020c_1342856615601_75784_2598</usedElements>
+										<usedElements>_17_0_2_627020c_1342117215326_513076_2605</usedElements>
+										<usedElements>_17_0_2_627020c_1342114394187_989578_2442</usedElements>
+										<usedElements>_17_0_2_627020c_1342856412157_706866_2434</usedElements>
+										<usedElements>_17_0_2_627020c_1342117215327_594090_2606</usedElements>
+										<usedElements>_17_0_2_627020c_1342122944175_728950_2622</usedElements>
+										<usedElements>_17_0_2_627020c_1342122922746_402460_2620</usedElements>
+										<usedElements>_17_0_2_627020c_1342117383787_415604_2610</usedElements>
+										<usedElements>_17_0_2_627020c_1342856615600_686113_2596</usedElements>
+										<usedElements>_17_0_2_627020c_1342114387291_829821_2441</usedElements>
+										<usedElements>_17_0_2_627020c_1342117181473_261823_2601</usedElements>
+										<usedElements>_17_0_2_627020c_1342856615598_374250_2595</usedElements>
+										<usedElements>_17_0_2_627020c_1342856615601_939993_2597</usedElements>
+										<usedElements>_17_0_2_627020c_1342117200254_523808_2602</usedElements>
+									</diagramContents>
+								</diagram:DiagramRepresentationObject>
+							</diagramRepresentation>
+						</xmi:Extension>
+					</ownedDiagram>
+				</modelExtension>
+			</xmi:Extension>
+			<packagedElement xmi:type='uml:Package' xmi:id='_17_0_2_627020c_1342037582005_561840_2705' name='service'>
+				<packagedElement xmi:type='uml:Class' xmi:id='_17_0_2_627020c_1342856615598_374250_2595' name='SampleWebService'>
+					<ownedOperation xmi:type='uml:Operation' xmi:id='_17_0_2_627020c_1342856615600_686113_2596' name='getDates' visibility='public'>
+						<raisedException xmi:idref='_17_0_2_627020c_1342117383787_415604_2610'/>
+						<ownedParameter xmi:type='uml:Parameter' xmi:id='_17_0_2_627020c_1342856615602_316615_2600' name='start' visibility='public'>
+							<type href='andromda-profile-datatype-3.4-SNAPSHOT.xml.zip#_9_0_1fe00f9_1119336925531_433788_5'>
+								<xmi:Extension extender='MagicDraw UML 17.0.2'>
+									<referenceExtension referentPath='datatype::DateTime' referentType='DataType'/>
+								</xmi:Extension>
+							</type>
+						</ownedParameter>
+						<ownedParameter xmi:type='uml:Parameter' xmi:id='_17_0_2_627020c_1342856615603_36980_2601' name='end' visibility='public'>
+							<type href='andromda-profile-datatype-3.4-SNAPSHOT.xml.zip#_9_0_1fe00f9_1119336925531_433788_5'>
+								<xmi:Extension extender='MagicDraw UML 17.0.2'>
+									<referenceExtension referentPath='datatype::DateTime' referentType='DataType'/>
+								</xmi:Extension>
+							</type>
+						</ownedParameter>
+						<ownedParameter xmi:type='uml:Parameter' xmi:id='_17_0_2_627020c_1342856615603_183227_2602' name='returnObj' visibility='public' direction='return' type='_17_0_2_627020c_1342114387291_829821_2441'/>
+					</ownedOperation>
+					<ownedOperation xmi:type='uml:Operation' xmi:id='_17_0_2_627020c_1342856615601_939993_2597' name='getStrings' visibility='public'>
+						<ownedParameter xmi:type='uml:Parameter' xmi:id='_17_0_2_627020c_1342856615604_797391_2603' name='optional' visibility='public'>
+							<type href='andromda-profile-datatype-3.4-SNAPSHOT.xml.zip#_9_0_1fe00f9_1119336925531_364079_66'>
+								<xmi:Extension extender='MagicDraw UML 17.0.2'>
+									<referenceExtension referentPath='datatype::String' referentType='DataType'/>
+								</xmi:Extension>
+							</type>
+							<lowerValue xmi:type='uml:LiteralInteger' xmi:id='_17_0_2_627020c_1342856615606_99422_2608'/>
+							<xmi:Extension extender='MagicDraw UML 17.0.2'>
+								<modelExtension>
+									<upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:id='_17_0_2_627020c_1342856615606_581570_2607' value='1'/>
+								</modelExtension>
+							</xmi:Extension>
+						</ownedParameter>
+						<ownedParameter xmi:type='uml:Parameter' xmi:id='_17_0_2_627020c_1342856615604_202990_2604' name='required' visibility='public'>
+							<type href='andromda-profile-datatype-3.4-SNAPSHOT.xml.zip#_9_0_1fe00f9_1119336925531_364079_66'>
+								<xmi:Extension extender='MagicDraw UML 17.0.2'>
+									<referenceExtension referentPath='datatype::String' referentType='DataType'/>
+								</xmi:Extension>
+							</type>
+						</ownedParameter>
+						<ownedParameter xmi:type='uml:Parameter' xmi:id='_17_0_2_627020c_1342856615605_695057_2605' name='returnObj' visibility='public' direction='return' type='_17_0_2_627020c_1342114394187_989578_2442'/>
+					</ownedOperation>
+					<ownedOperation xmi:type='uml:Operation' xmi:id='_17_0_2_627020c_1342856615601_75784_2598' name='getServiceGreeting' visibility='public'>
+						<ownedParameter xmi:type='uml:Parameter' xmi:id='_17_0_2_627020c_1342856615605_473086_2606' name='greeting' visibility='public' direction='return' type='_17_0_2_627020c_1342122922746_402460_2620'/>
+					</ownedOperation>
+				</packagedElement>
+			</packagedElement>
+			<packagedElement xmi:type='uml:Package' xmi:id='_17_0_2_627020c_1342037592116_575994_2706' name='vo'>
+				<packagedElement xmi:type='uml:Class' xmi:id='_17_0_2_627020c_1342114387291_829821_2441' name='DatesVO'>
+					<ownedAttribute xmi:type='uml:Property' xmi:id='_17_0_2_627020c_1342117181473_261823_2601' name='start' visibility='public'>
+						<type href='andromda-profile-datatype-3.4-SNAPSHOT.xml.zip#_9_0_1fe00f9_1119336925531_433788_5'>
+							<xmi:Extension extender='MagicDraw UML 17.0.2'>
+								<referenceExtension referentPath='datatype::DateTime' referentType='DataType'/>
+							</xmi:Extension>
+						</type>
+					</ownedAttribute>
+					<ownedAttribute xmi:type='uml:Property' xmi:id='_17_0_2_627020c_1342117200254_523808_2602' name='end' visibility='public'>
+						<type href='andromda-profile-datatype-3.4-SNAPSHOT.xml.zip#_9_0_1fe00f9_1119336925531_433788_5'>
+							<xmi:Extension extender='MagicDraw UML 17.0.2'>
+								<referenceExtension referentPath='datatype::DateTime' referentType='DataType'/>
+							</xmi:Extension>
+						</type>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type='uml:Class' xmi:id='_17_0_2_627020c_1342114394187_989578_2442' name='StringsVO'>
+					<ownedAttribute xmi:type='uml:Property' xmi:id='_17_0_2_627020c_1342117215326_513076_2605' name='optional' visibility='public'>
+						<type href='andromda-profile-datatype-3.4-SNAPSHOT.xml.zip#_9_0_1fe00f9_1119336925531_364079_66'>
+							<xmi:Extension extender='MagicDraw UML 17.0.2'>
+								<referenceExtension referentPath='datatype::String' referentType='DataType'/>
+							</xmi:Extension>
+						</type>
+						<lowerValue xmi:type='uml:LiteralInteger' xmi:id='_17_0_2_627020c_1342117260613_946496_2607'/>
+						<xmi:Extension extender='MagicDraw UML 17.0.2'>
+							<modelExtension>
+								<upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:id='_17_0_2_627020c_1342117260613_260835_2608' value='1'/>
+							</modelExtension>
+						</xmi:Extension>
+					</ownedAttribute>
+					<ownedAttribute xmi:type='uml:Property' xmi:id='_17_0_2_627020c_1342117215327_594090_2606' name='required' visibility='public'>
+						<type href='andromda-profile-datatype-3.4-SNAPSHOT.xml.zip#_9_0_1fe00f9_1119336925531_364079_66'>
+							<xmi:Extension extender='MagicDraw UML 17.0.2'>
+								<referenceExtension referentPath='datatype::String' referentType='DataType'/>
+							</xmi:Extension>
+						</type>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type='uml:Class' xmi:id='_17_0_2_627020c_1342122922746_402460_2620' name='GreetingVO'>
+					<ownedAttribute xmi:type='uml:Property' xmi:id='_17_0_2_627020c_1342122944175_728950_2622' name='message' visibility='public'>
+						<type href='andromda-profile-datatype-3.4-SNAPSHOT.xml.zip#_9_0_1fe00f9_1119336925531_364079_66'>
+							<xmi:Extension extender='MagicDraw UML 17.0.2'>
+								<referenceExtension referentPath='datatype::String' referentType='DataType'/>
+							</xmi:Extension>
+						</type>
+					</ownedAttribute>
+				</packagedElement>
+			</packagedElement>
+			<packagedElement xmi:type='uml:Package' xmi:id='_17_0_2_627020c_1342117377614_368293_2609' name='exceptions'>
+				<packagedElement xmi:type='uml:Class' xmi:id='_17_0_2_627020c_1342117383787_415604_2610' name='DeclaredException'/>
+			</packagedElement>
+			<packagedElement xmi:type='uml:Package' xmi:id='_17_0_2_627020c_1342968190618_278790_2613' name='enumeration'>
+				<packagedElement xmi:type='uml:Class' xmi:id='_17_0_2_627020c_1342968269043_2925_2640' name='TestEnum'>
+					<ownedAttribute xmi:type='uml:Property' xmi:id='_17_0_2_627020c_1342968296405_240299_2642' name='SAMPLE' visibility='public'>
+						<type href='andromda-profile-datatype-3.4-SNAPSHOT.xml.zip#_9_0_1fe00f9_1119336925531_364079_66'>
+							<xmi:Extension extender='MagicDraw UML 17.0.2'>
+								<referenceExtension referentPath='datatype::String' referentType='DataType'/>
+							</xmi:Extension>
+						</type>
+					</ownedAttribute>
+					<ownedAttribute xmi:type='uml:Property' xmi:id='_17_0_2_627020c_1342968320062_701256_2643' name='WORK' visibility='public'>
+						<type href='andromda-profile-datatype-3.4-SNAPSHOT.xml.zip#_9_0_1fe00f9_1119336925531_364079_66'>
+							<xmi:Extension extender='MagicDraw UML 17.0.2'>
+								<referenceExtension referentPath='datatype::String' referentType='DataType'/>
+							</xmi:Extension>
+						</type>
+					</ownedAttribute>
+					<ownedAttribute xmi:type='uml:Property' xmi:id='_17_0_2_627020c_1342968320878_944818_2644' name='TESTEN' visibility='public'>
+						<type href='andromda-profile-datatype-3.4-SNAPSHOT.xml.zip#_9_0_1fe00f9_1119336925531_364079_66'>
+							<xmi:Extension extender='MagicDraw UML 17.0.2'>
+								<referenceExtension referentPath='datatype::String' referentType='DataType'/>
+							</xmi:Extension>
+						</type>
+					</ownedAttribute>
+				</packagedElement>
+			</packagedElement>
+		</packagedElement>
+	</uml:Model>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<stereotypeApplicationForProxies/>
+		<stereotypesHREFS>
+			<stereotype name='andromda_common:ValueObject' stereotypeHREF='local:/PROJECT-eb671d3de8f97fbe3debfae57467f09c?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_1fe00f9_1119373197267_59537_10'/>
+			<tag name='andromda_common:ValueObject:andromda_xml_bindingAnnotations' tagID='_17_0_1_2e90116_1302564208288_944717_4215' tagURI='local:/PROJECT-eb671d3de8f97fbe3debfae57467f09c?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_17_0_1_2e90116_1302564208288_944717_4215'/>
+			<tag name='andromda_common:ValueObject:andromda_xml_attributes' tagID='_17_0_1_2e90116_1302564208288_19770_4216' tagURI='local:/PROJECT-eb671d3de8f97fbe3debfae57467f09c?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_17_0_1_2e90116_1302564208288_19770_4216'/>
+			<tag name='andromda_common:ValueObject:andromda_serialVersionUID' tagID='_17_0_1_2e90116_1302564208288_12489_4217' tagURI='local:/PROJECT-eb671d3de8f97fbe3debfae57467f09c?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_17_0_1_2e90116_1302564208288_12489_4217'/>
+			<tag name='andromda_common:ValueObject:andromda_generateEqualPropertiesMethod' tagID='_17_0_1_2e90116_1302564208288_113831_4218' tagURI='local:/PROJECT-eb671d3de8f97fbe3debfae57467f09c?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_17_0_1_2e90116_1302564208288_113831_4218'/>
+			<stereotype name='andromda_webservice:WebService' stereotypeHREF='local:/PROJECT-7998b4d19d525624bbab84e6e16d987?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_1fe00f9_1119337599234_292426_17'/>
+			<tag name='andromda_webservice:WebService:andromda_webservice_use' tagID='_9_0_1fe00f9_1119337599234_534435_10' tagURI='local:/PROJECT-7998b4d19d525624bbab84e6e16d987?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_1fe00f9_1119337599234_534435_10'/>
+			<tag name='andromda_webservice:WebService:andromda_webservice_provider' tagID='_9_0_1fe00f9_1119337599234_782725_11' tagURI='local:/PROJECT-7998b4d19d525624bbab84e6e16d987?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_1fe00f9_1119337599234_782725_11'/>
+			<tag name='andromda_webservice:WebService:andromda_webservice_style' tagID='_9_0_1fe00f9_1119337599234_448866_13' tagURI='local:/PROJECT-7998b4d19d525624bbab84e6e16d987?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_1fe00f9_1119337599234_448866_13'/>
+			<tag name='andromda_webservice:WebService:andromda_schema_validation' tagID='_9_5_1_2e90116_1229377882176_428562_0' tagURI='local:/PROJECT-7998b4d19d525624bbab84e6e16d987?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_5_1_2e90116_1229377882176_428562_0'/>
+			<tag name='andromda_webservice:WebService:andromda_webservice_wsdlSoapAddress' tagID='_9_5_1_2e90116_1229442640625_526670_86' tagURI='local:/PROJECT-7998b4d19d525624bbab84e6e16d987?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_5_1_2e90116_1229442640625_526670_86'/>
+			<tag name='andromda_webservice:WebService:andromda_jaxb_simpleBindingMode' tagID='_9_5_1_2e90116_1229442883628_896777_91' tagURI='local:/PROJECT-7998b4d19d525624bbab84e6e16d987?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_5_1_2e90116_1229442883628_896777_91'/>
+			<tag name='andromda_webservice:WebService:andromda_jaxb_xjcArguments' tagID='_9_5_1_2e90116_1229443069302_564948_97' tagURI='local:/PROJECT-7998b4d19d525624bbab84e6e16d987?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_5_1_2e90116_1229443069302_564948_97'/>
+			<tag name='andromda_webservice:WebService:andromda_serialVersionUID' tagID='_9_5_1_2e90116_1238680689748_661759_0' tagURI='local:/PROJECT-7998b4d19d525624bbab84e6e16d987?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_5_1_2e90116_1238680689748_661759_0'/>
+			<tag name='andromda_webservice:WebService:andromda_REST' tagID='_9_5_1_2e90116_1244667020125_652295_0' tagURI='local:/PROJECT-7998b4d19d525624bbab84e6e16d987?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_5_1_2e90116_1244667020125_652295_0'/>
+			<tag name='andromda_webservice:WebService:andromda_REST_contexts' tagID='_9_5_1_2e90116_1244667139034_234059_2' tagURI='local:/PROJECT-7998b4d19d525624bbab84e6e16d987?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_5_1_2e90116_1244667139034_234059_2'/>
+			<tag name='andromda_webservice:WebService:andromda_REST_path' tagID='_9_5_1_2e90116_1244667114346_428724_1' tagURI='local:/PROJECT-7998b4d19d525624bbab84e6e16d987?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_5_1_2e90116_1244667114346_428724_1'/>
+			<tag name='andromda_webservice:WebService:andromda_REST_request_type' tagID='_9_5_1_2e90116_1244667632234_869569_25' tagURI='local:/PROJECT-7998b4d19d525624bbab84e6e16d987?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_5_1_2e90116_1244667632234_869569_25'/>
+			<tag name='andromda_webservice:WebService:andromda_cache_type' tagID='_9_5_1_2e90116_1244668841156_733795_152' tagURI='local:/PROJECT-7998b4d19d525624bbab84e6e16d987?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_5_1_2e90116_1244668841156_733795_152'/>
+			<tag name='andromda_webservice:WebService:andromda_REST_produces' tagID='_9_5_1_2e90116_1244668865266_982595_153' tagURI='local:/PROJECT-7998b4d19d525624bbab84e6e16d987?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_5_1_2e90116_1244668865266_982595_153'/>
+			<tag name='andromda_webservice:WebService:andromda_REST_consumes' tagID='_9_5_1_2e90116_1244668937439_119646_154' tagURI='local:/PROJECT-7998b4d19d525624bbab84e6e16d987?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_5_1_2e90116_1244668937439_119646_154'/>
+			<tag name='andromda_webservice:WebService:andromda_REST_provider' tagID='_9_5_1_2e90116_1244668967065_769215_155' tagURI='local:/PROJECT-7998b4d19d525624bbab84e6e16d987?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_5_1_2e90116_1244668967065_769215_155'/>
+			<tag name='andromda_webservice:WebService:andromda_REST_target' tagID='_9_5_1_2e90116_1244669030911_408606_156' tagURI='local:/PROJECT-7998b4d19d525624bbab84e6e16d987?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_5_1_2e90116_1244669030911_408606_156'/>
+			<tag name='andromda_webservice:WebService:andromda_REST_retention' tagID='_9_5_1_2e90116_1244669044036_444640_157' tagURI='local:/PROJECT-7998b4d19d525624bbab84e6e16d987?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_5_1_2e90116_1244669044036_444640_157'/>
+			<tag name='andromda_webservice:WebService:andromda_REST_http_method' tagID='_9_5_1_2e90116_1244669063208_479696_158' tagURI='local:/PROJECT-7998b4d19d525624bbab84e6e16d987?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_5_1_2e90116_1244669063208_479696_158'/>
+			<tag name='andromda_webservice:WebService:andromda_service_logging' tagID='_9_5_1_2e90116_1244670528949_115570_186' tagURI='local:/PROJECT-7998b4d19d525624bbab84e6e16d987?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_5_1_2e90116_1244670528949_115570_186'/>
+			<stereotype name='StandardProfileL2:ModelLibrary' stereotypeHREF='local:/PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#magicdraw_1046861421236_39100_29'/>
+			<stereotype name='MagicDraw_Profile:DiagramInfo' stereotypeHREF='local:/PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_be00301_1108044380615_150487_0'/>
+			<tag name='MagicDraw_Profile:DiagramInfo:Creation_date' tagID='_be00301_1073306188629_537791_2' tagURI='local:/PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_be00301_1073306188629_537791_2'/>
+			<tag name='MagicDraw_Profile:DiagramInfo:Author' tagID='_be00301_1077726770128_871366_1' tagURI='local:/PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_be00301_1077726770128_871366_1'/>
+			<tag name='MagicDraw_Profile:DiagramInfo:Modification_date' tagID='_be00301_1073394345322_922552_1' tagURI='local:/PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_be00301_1073394345322_922552_1'/>
+			<tag name='MagicDraw_Profile:DiagramInfo:Last_modified_by' tagID='_16_8beta_8ca0285_1257244649124_794756_344' tagURI='local:/PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_16_8beta_8ca0285_1257244649124_794756_344'/>
+			<stereotype name='andromda_xml:XmlSchema' stereotypeHREF='local:/PROJECT-f628ae1c9d151ec3bd65a246eb4179?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_5_1_2e90116_1229363944185_345791_1'/>
+			<tag name='andromda_xml:XmlSchema:andromda_xml_namespace' tagID='_9_5_1_2e90116_1229364135078_149986_2' tagURI='local:/PROJECT-f628ae1c9d151ec3bd65a246eb4179?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_5_1_2e90116_1229364135078_149986_2'/>
+			<tag name='andromda_xml:XmlSchema:andromda_xml_xmlns' tagID='_9_5_1_2e90116_1229444347178_660902_91' tagURI='local:/PROJECT-f628ae1c9d151ec3bd65a246eb4179?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_5_1_2e90116_1229444347178_660902_91'/>
+			<tag name='andromda_xml:XmlSchema:andromda_xml_attributeFormDefault' tagID='_9_5_1_2e90116_1229444406241_967293_92' tagURI='local:/PROJECT-f628ae1c9d151ec3bd65a246eb4179?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_5_1_2e90116_1229444406241_967293_92'/>
+			<tag name='andromda_xml:XmlSchema:andromda_xml_elementFormDefault' tagID='_9_5_1_2e90116_1229444585853_88316_97' tagURI='local:/PROJECT-f628ae1c9d151ec3bd65a246eb4179?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_5_1_2e90116_1229444585853_88316_97'/>
+			<stereotype name='andromda_common:ApplicationException' stereotypeHREF='local:/PROJECT-eb671d3de8f97fbe3debfae57467f09c?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_1fe00f9_1119373197267_116094_8'/>
+			<tag name='andromda_common:ApplicationException:andromda_serialVersionUID' tagID='_17_0_1_2e90116_1302564124909_642760_4203' tagURI='local:/PROJECT-eb671d3de8f97fbe3debfae57467f09c?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_17_0_1_2e90116_1302564124909_642760_4203'/>
+			<stereotype name='andromda_webservice:WebFault' stereotypeHREF='local:/PROJECT-7998b4d19d525624bbab84e6e16d987?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_5_1_2e90116_1229364633835_405645_0'/>
+			<stereotype name='andromda_common:Enumeration' stereotypeHREF='local:/PROJECT-eb671d3de8f97fbe3debfae57467f09c?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_1fe00f9_1119373197267_700962_14'/>
+			<tag name='andromda_common:Enumeration:andromda_serialVersionUID' tagID='_17_0_1_2e90116_1302564142097_9643_4207' tagURI='local:/PROJECT-eb671d3de8f97fbe3debfae57467f09c?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_17_0_1_2e90116_1302564142097_9643_4207'/>
+		</stereotypesHREFS>
+		<favoriteElements xmi:value=''/>
+	</xmi:Extension>
+	<andromda_common:ValueObject xmi:id='_17_0_2_627020c_1342122940886_919691_2621' base_Class='_17_0_2_627020c_1342122922746_402460_2620'/>
+	<andromda_webservice:WebService xmi:id='_17_0_2_627020c_1342856615602_27716_2599' base_Class='_17_0_2_627020c_1342856615598_374250_2595'/>
+	<MagicDraw_Profile:DiagramInfo xmi:id='_17_0_2_627020c_1342856412250_199639_2445' base_Diagram='_17_0_2_627020c_1342856412157_706866_2434' Creation_date='7/21/12 1:10 PM' Last_modified_by='jeeva' Modification_date='7/22/12 8:29 PM' Author='jeeva'/>
+	<StandardProfileL2:ModelLibrary xmi:id='_16_0_1_2e90116_1245798622829_669470_242' base_Package='eee_1045467100313_135436_1'/>
+	<andromda_common:ValueObject xmi:id='_17_0_2_627020c_1342114423536_880908_2444' base_Class='_17_0_2_627020c_1342114387291_829821_2441'/>
+	<andromda_common:ApplicationException xmi:id='_17_0_2_627020c_1342117439605_653436_2613' base_Class='_17_0_2_627020c_1342117383787_415604_2610'/>
+	<andromda_webservice:WebFault xmi:id='_17_0_2_627020c_1342117439605_653436_2613application1' base_Class='_17_0_2_627020c_1342117383787_415604_2610'/>
+	<andromda_xml:XmlSchema xmi:id='_17_0_2_627020c_1342114434172_318970_2447' base_Package='_17_0_2_627020c_1342037592116_575994_2706'/>
+	<andromda_xml:XmlSchema xmi:id='_17_0_2_627020c_1342117476470_729338_2615' base_Package='_17_0_2_627020c_1342117377614_368293_2609'/>
+	<andromda_common:ValueObject xmi:id='_17_0_2_627020c_1342114423539_561988_2446' base_Class='_17_0_2_627020c_1342114394187_989578_2442'/>
+	<andromda_common:Enumeration xmi:id='_17_0_2_627020c_1342968291983_68630_2641' base_Class='_17_0_2_627020c_1342968269043_2925_2640'/>
+	<andromda_xml:XmlSchema xmi:id='_17_0_2_627020c_1342117476469_97232_2614' base_Package='_17_0_2_627020c_1342037582005_561840_2705'/>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='com.nomagic.ci.proxy.snapshot.descriptor.descriptors' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'>
+<snapshot:SnapshotInfoContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:snapshot="http://www.nomagic.com/ns/cameo/client/snapshot/1.0" xmi:id="_tyQYoMuUEeGTNKcXcW2wuA">
+  <snaphotDescriptors xmi:id="_tyQ_sMuUEeGTNKcXcW2wuA" originalResourceURI="local:/PROJECT-aa8ccd72b8b947b8764215ce898d2b?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>_17_0_1_2e90116_1302564025198_877618_2632</sharePointObjects>
+    <sharePointObjects>_8a70287_1078771814628_224704_589</sharePointObjects>
+  </snaphotDescriptors>
+  <snaphotDescriptors xmi:id="_tyawsMuUEeGTNKcXcW2wuA" originalResourceURI="local:/PROJECT-f392a83d7e259d5a6875099f8235cf5?resource=com.nomagic.magicdraw.uml_umodel.model">
+    <roots>_16_0_1_2e90116_1245798622829_669470_242</roots>
+  </snaphotDescriptors>
+  <snaphotDescriptors xmi:id="_typaMcuUEeGTNKcXcW2wuA" originalResourceURI="local:/PROJECT-6ceaff6be9c59d7620631d687862f115?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>_11_5_e240333_1154527253281_154549_26</sharePointObjects>
+  </snaphotDescriptors>
+  <snaphotDescriptors xmi:id="_tyuSsMuUEeGTNKcXcW2wuA" originalResourceURI="local:/PROJECT-330c683a6ccfb2ca5ac5279313e852?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>_12_0_12ab03bf_1166898799812_358986_99</sharePointObjects>
+  </snaphotDescriptors>
+  <snaphotDescriptors xmi:id="_tyykIMuUEeGTNKcXcW2wuA" originalResourceURI="local:/PROJECT-531ee47a1164e071f11cf8bc713e49?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>_11_5_e240333_1154527425687_111873_349</sharePointObjects>
+  </snaphotDescriptors>
+  <snaphotDescriptors xmi:id="_ty5R0MuUEeGTNKcXcW2wuA" originalResourceURI="local:/PROJECT-353868b6aa7473a4fdd158c93a3422d?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>_9_0_2_12ab03bf_1120852471296_986007_0</sharePointObjects>
+  </snaphotDescriptors>
+  <snaphotDescriptors xmi:id="_ty9jQMuUEeGTNKcXcW2wuA" originalResourceURI="local:/PROJECT-defe54cd57ed5746673a6317d366dd?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>_9_0_1fe00f9_1119336925546_238419_77</sharePointObjects>
+  </snaphotDescriptors>
+  <snaphotDescriptors xmi:id="_tzFfEMuUEeGTNKcXcW2wuA" originalResourceURI="local:/PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>magicdraw_uml_standard_profile_v_0001</sharePointObjects>
+  </snaphotDescriptors>
+  <snaphotDescriptors xmi:id="_tzsjEMuUEeGTNKcXcW2wuA" originalResourceURI="local:/PROJECT-83c392c7a0f05076e71989bd67a38823?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>_9_0_2_12ab03bf_1120852932765_76536_0</sharePointObjects>
+  </snaphotDescriptors>
+  <snaphotDescriptors xmi:id="_tzwNcMuUEeGTNKcXcW2wuA" originalResourceURI="local:/PROJECT-bdc8ca4aa7bcc2c9a759c1375daf69?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>_11_5_e240333_1154527578125_463523_83</sharePointObjects>
+  </snaphotDescriptors>
+  <snaphotDescriptors xmi:id="_tz1F8MuUEeGTNKcXcW2wuA" originalResourceURI="local:/PROJECT-705152582f2a802028148856a4d580aa?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>_11_5_e240333_1154527378140_885914_432</sharePointObjects>
+  </snaphotDescriptors>
+  <snaphotDescriptors xmi:id="_tz5XYMuUEeGTNKcXcW2wuA" originalResourceURI="local:/PROJECT-efc1ee2097b1e0a2f22967b3e8679aa?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>_11_5_e240333_1154527540265_181005_899</sharePointObjects>
+  </snaphotDescriptors>
+  <snaphotDescriptors xmi:id="_U3qJINPgEeGR2rFSkF7vbQ" originalResourceURI="local:/PROJECT-7998b4d19d525624bbab84e6e16d987?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>_9_0_2_12ab03bf_1120852932765_76536_0</sharePointObjects>
+  </snaphotDescriptors>
+  <snaphotDescriptors xmi:id="_U5bDsNPgEeGR2rFSkF7vbQ" originalResourceURI="local:/PROJECT-eb671d3de8f97fbe3debfae57467f09c?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>_8a70287_1078771814628_224704_589</sharePointObjects>
+    <sharePointObjects>_17_0_1_2e90116_1302564025198_877618_2632</sharePointObjects>
+  </snaphotDescriptors>
+  <snaphotDescriptors xmi:id="_U5t-oNPgEeGR2rFSkF7vbQ" originalResourceURI="local:/PROJECT-2053c9b3db4d83fbeff3426811af17a6?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>_11_5_e240333_1154527425687_111873_349</sharePointObjects>
+  </snaphotDescriptors>
+  <snaphotDescriptors xmi:id="_U7s7oNPgEeGR2rFSkF7vbQ" originalResourceURI="local:/PROJECT-c4761dfa50bf72fb60693efc8193242?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>_11_5_e240333_1154527378140_885914_432</sharePointObjects>
+  </snaphotDescriptors>
+  <snaphotDescriptors xmi:id="_U8oIsNPgEeGR2rFSkF7vbQ" originalResourceURI="local:/PROJECT-5e80cdd08691456640d6403ea4f03a?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>_11_5_e240333_1154527540265_181005_899</sharePointObjects>
+  </snaphotDescriptors>
+  <snaphotDescriptors xmi:id="_U-TjsNPgEeGR2rFSkF7vbQ" originalResourceURI="local:/PROJECT-a3842087847353943a903d36733d6b2?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>_12_0_12ab03bf_1166898799812_358986_99</sharePointObjects>
+  </snaphotDescriptors>
+  <snaphotDescriptors xmi:id="_U-meoNPgEeGR2rFSkF7vbQ" originalResourceURI="local:/PROJECT-22a38c78e483726a0feff728cec1044?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>_9_0_1fe00f9_1119336925546_238419_77</sharePointObjects>
+  </snaphotDescriptors>
+  <snaphotDescriptors xmi:id="_U-r-MNPgEeGR2rFSkF7vbQ" originalResourceURI="local:/PROJECT-f628ae1c9d151ec3bd65a246eb4179?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>_9_0_2_12ab03bf_1120852471296_986007_0</sharePointObjects>
+  </snaphotDescriptors>
+  <snaphotDescriptors xmi:id="_U-z6ANPgEeGR2rFSkF7vbQ" originalResourceURI="local:/PROJECT-3aa503d7b65c1a6d251ae1e6ab827e8?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>_11_5_e240333_1154527578125_463523_83</sharePointObjects>
+  </snaphotDescriptors>
+  <snaphotDescriptors xmi:id="_U_E_wNPgEeGR2rFSkF7vbQ" originalResourceURI="local:/PROJECT-dc758356b32e81d9bc4383928d624a86?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>_11_5_e240333_1154527253281_154549_26</sharePointObjects>
+  </snaphotDescriptors>
+  <snaphotDescriptors xmi:id="_uS2ikNQLEeGR2rFSkF7vbQ" originalResourceURI="local:/PROJECT-a41b883ce47fc196ccde4b80ff2a60?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>rimvydas_1048688023274_104450_1422</sharePointObjects>
+  </snaphotDescriptors>
+</snapshot:SnapshotInfoContainer>
+</filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='proxy.local__PROJECT$hc4761dfa50bf72fb60693efc8193242_resource_com$dnomagic$dci$dmetamodel$dproject$dsnapshot' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'><project:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:project="http://www.nomagic.com/ns/cameo/client/project/1.0" xmi:id="PROJECT-705152582f2a802028148856a4d580aa" description="" id="PROJECT-705152582f2a802028148856a4d580aa">	<ownedSections xmi:id="_h_92UMuUEeGTNKcXcW2wuA" name="shared_model" shared="true" featuredBy="_h_9PQMuUEeGTNKcXcW2wuA">		<sharePoints xmi:id="_iDFbwMuUEeGTNKcXcW2wuA" ID="_11_5_e240333_1154527378140_885914_432">			<object href="PROJECT-c4761dfa50bf72fb60693efc8193242?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_11_5_e240333_1154527378140_885914_432"></object>			<options xmi:id="_iDFbwcuUEeGTNKcXcW2wuA" key="preferredPath" value="org.andromda.profile"></options></sharePoints></ownedSections>	<ownedSections xmi:id="_iB5I8MuUEeGTNKcXcW2wuA" name="commonprojectoptions" shared="true" featuredBy="_iB4h4MuUEeGTNKcXcW2wuA"></ownedSections>	<ownedSections xmi:id="_iB5wAsuUEeGTNKcXcW2wuA" name="personalprojectoptions" shared="true" belongsTo="_iB5wAcuUEeGTNKcXcW2wuA" featuredBy="_iB4h4MuUEeGTNKcXcW2wuA"></ownedSections>	<userParts xmi:id="_iB5wAcuUEeGTNKcXcW2wuA" user="_iB5wAMuUEeGTNKcXcW2wuA" sections="_iB5wAsuUEeGTNKcXcW2wuA"></userParts>	<features xmi:id="_h_9PQMuUEeGTNKcXcW2wuA" name="UML Model" namespace="com.nomagic.magicdraw.uml_model" version="17.0" sections="_h_92UMuUEeGTNKcXcW2wuA" internalVersion="1"></features>	<features xmi:id="_iB4h4MuUEeGTNKcXcW2wuA" name="Project Options" namespace="com.nomagic.magicdraw.core.project.options" version="1.0" sections="_iB5I8MuUEeGTNKcXcW2wuA _iB5wAsuUEeGTNKcXcW2wuA" internalVersion="1"></features>	<features xmi:id="_iDaL4MuUEeGTNKcXcW2wuA" name="Language Properties" namespace="com.nomagic.magicdraw.ce.languageproperties" version="1.0" internalVersion="1"></features>	<features xmi:id="_iDaL4cuUEeGTNKcXcW2wuA" name="Code Engineering" namespace="com.nomagic.magicdraw.ce" version="1.0" internalVersion="1"></features>	<properties xmi:id="_iDHQ8MuUEeGTNKcXcW2wuA" key="standardProfile" value="false"></properties>	<properties xmi:id="_iDHQ8cuUEeGTNKcXcW2wuA" key="internalVersion" value="-1"></properties>	<projectUsers xmi:id="_iB5wAMuUEeGTNKcXcW2wuA" userId="default"></projectUsers></project:Project></filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='PROJECT-f392a83d7e259d5a6875099f8235cf5' type='BINARY'>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='proxy.local__PROJECT$hdc758356b32e81d9bc4383928d624a86_resource_com$dnomagic$dci$dmetamodel$dproject$dsnapshot' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'><project:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:project="http://www.nomagic.com/ns/cameo/client/project/1.0" xmi:id="PROJECT-6ceaff6be9c59d7620631d687862f115" description="" id="PROJECT-6ceaff6be9c59d7620631d687862f115">	<ownedSections xmi:id="_RxzlocuUEeGTNKcXcW2wuA" name="shared_model" shared="true" featuredBy="_RxzloMuUEeGTNKcXcW2wuA">		<sharePoints xmi:id="_RzDi0MuUEeGTNKcXcW2wuA" ID="_11_5_e240333_1154527253281_154549_26">			<object href="PROJECT-dc758356b32e81d9bc4383928d624a86?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_11_5_e240333_1154527253281_154549_26"></object>			<options xmi:id="_RzDi0cuUEeGTNKcXcW2wuA" key="preferredPath" value="org.andromda.profile"></options></sharePoints></ownedSections>	<ownedSections xmi:id="_RydF4cuUEeGTNKcXcW2wuA" name="commonprojectoptions" shared="true" featuredBy="_RydF4MuUEeGTNKcXcW2wuA"></ownedSections>	<ownedSections xmi:id="_Ryds88uUEeGTNKcXcW2wuA" name="personalprojectoptions" shared="true" belongsTo="_Ryds8suUEeGTNKcXcW2wuA" featuredBy="_RydF4MuUEeGTNKcXcW2wuA"></ownedSections>	<userParts xmi:id="_Ryds8suUEeGTNKcXcW2wuA" user="_Ryds8cuUEeGTNKcXcW2wuA" sections="_Ryds88uUEeGTNKcXcW2wuA"></userParts>	<features xmi:id="_RxzloMuUEeGTNKcXcW2wuA" name="UML Model" namespace="com.nomagic.magicdraw.uml_model" version="17.0" sections="_RxzlocuUEeGTNKcXcW2wuA" internalVersion="1"></features>	<features xmi:id="_RydF4MuUEeGTNKcXcW2wuA" name="Project Options" namespace="com.nomagic.magicdraw.core.project.options" version="1.0" sections="_RydF4cuUEeGTNKcXcW2wuA _Ryds88uUEeGTNKcXcW2wuA" internalVersion="1"></features>	<features xmi:id="_R0JvAMuUEeGTNKcXcW2wuA" name="Language Properties" namespace="com.nomagic.magicdraw.ce.languageproperties" version="1.0" internalVersion="1"></features>	<features xmi:id="_R0KWEMuUEeGTNKcXcW2wuA" name="Code Engineering" namespace="com.nomagic.magicdraw.ce" version="1.0" internalVersion="1"></features>	<properties xmi:id="_RzEw8MuUEeGTNKcXcW2wuA" key="standardProfile" value="false"></properties>	<properties xmi:id="_RzEw8cuUEeGTNKcXcW2wuA" key="internalVersion" value="-1"></properties>	<projectUsers xmi:id="_Ryds8cuUEeGTNKcXcW2wuA" userId="default"></projectUsers></project:Project></filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='proxy.local__PROJECT$hf628ae1c9d151ec3bd65a246eb4179_resource_com$dnomagic$dci$dmetamodel$dproject$dsnapshot' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'><project:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:project="http://www.nomagic.com/ns/cameo/client/project/1.0" xmi:id="PROJECT-353868b6aa7473a4fdd158c93a3422d" description="" id="PROJECT-353868b6aa7473a4fdd158c93a3422d">	<ownedSections xmi:id="_b0iO0cuUEeGTNKcXcW2wuA" name="shared_model" shared="true" featuredBy="_b0iO0MuUEeGTNKcXcW2wuA">		<sharePoints xmi:id="_b2xDcMuUEeGTNKcXcW2wuA" ID="_9_0_2_12ab03bf_1120852471296_986007_0">			<object href="PROJECT-f628ae1c9d151ec3bd65a246eb4179?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_2_12ab03bf_1120852471296_986007_0"></object>			<options xmi:id="_b2xDccuUEeGTNKcXcW2wuA" key="preferredPath" value=""></options></sharePoints></ownedSections>	<ownedSections xmi:id="_b1hGQcuUEeGTNKcXcW2wuA" name="commonprojectoptions" shared="true" featuredBy="_b1hGQMuUEeGTNKcXcW2wuA"></ownedSections>	<ownedSections xmi:id="_b1htU8uUEeGTNKcXcW2wuA" name="personalprojectoptions" shared="true" belongsTo="_b1htUsuUEeGTNKcXcW2wuA" featuredBy="_b1hGQMuUEeGTNKcXcW2wuA"></ownedSections>	<userParts xmi:id="_b1htUsuUEeGTNKcXcW2wuA" user="_b1htUcuUEeGTNKcXcW2wuA" sections="_b1htU8uUEeGTNKcXcW2wuA"></userParts>	<features xmi:id="_b0iO0MuUEeGTNKcXcW2wuA" name="UML Model" namespace="com.nomagic.magicdraw.uml_model" version="17.0" sections="_b0iO0cuUEeGTNKcXcW2wuA" internalVersion="1"></features>	<features xmi:id="_b1hGQMuUEeGTNKcXcW2wuA" name="Project Options" namespace="com.nomagic.magicdraw.core.project.options" version="1.0" sections="_b1hGQcuUEeGTNKcXcW2wuA _b1htU8uUEeGTNKcXcW2wuA" internalVersion="1"></features>	<features xmi:id="_b3Jd8MuUEeGTNKcXcW2wuA" name="Language Properties" namespace="com.nomagic.magicdraw.ce.languageproperties" version="1.0" internalVersion="1"></features>	<features xmi:id="_b3KFAMuUEeGTNKcXcW2wuA" name="Code Engineering" namespace="com.nomagic.magicdraw.ce" version="1.0" internalVersion="1"></features>	<properties xmi:id="_b2yRkMuUEeGTNKcXcW2wuA" key="standardProfile" value="false"></properties>	<properties xmi:id="_b2yRkcuUEeGTNKcXcW2wuA" key="internalVersion" value="-1"></properties>	<projectUsers xmi:id="_b1htUcuUEeGTNKcXcW2wuA" userId="default"></projectUsers></project:Project></filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='com.nomagic.ci.metamodel.project' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'>
+<project:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:project="http://www.nomagic.com/ns/cameo/client/project/1.0" xmi:id="_BwCyMMuUEeGTNKcXcW2wuA" description="" id="PROJECT-f392a83d7e259d5a6875099f8235cf5">
+  <ownedSections xmi:id="_BwvVwcuUEeGTNKcXcW2wuA" name="model" featuredBy="_BwvVwMuUEeGTNKcXcW2wuA">
+    <proxySharePoints xmi:id="_4USgYNQNEeGR2rFSkF7vbQ" ID="47a6e6db-9f89-45f8-830c-e6c0fcdcaacd">
+      <object href="PROJECT-f392a83d7e259d5a6875099f8235cf5?resource=com.nomagic.magicdraw.uml_umodel.model#_16_0_1_2e90116_1245798622829_669470_242"/>
+      <options xmi:id="_4USgYdQNEeGR2rFSkF7vbQ" key="preferredPath" value=""/>
+    </proxySharePoints>
+  </ownedSections>
+  <ownedSections xmi:id="_BxvbUcuUEeGTNKcXcW2wuA" name="commonprojectoptions" shared="true" featuredBy="_BxvbUMuUEeGTNKcXcW2wuA"/>
+  <ownedSections xmi:id="_BxwCY8uUEeGTNKcXcW2wuA" name="personalprojectoptions" shared="true" belongsTo="_BxwCYsuUEeGTNKcXcW2wuA" featuredBy="_BxvbUMuUEeGTNKcXcW2wuA"/>
+  <ownedSections xmi:id="_CqDjYMuUEeGTNKcXcW2wuA" name="commoncodeengineering" featuredBy="_Cp_R8cuUEeGTNKcXcW2wuA"/>
+  <userParts xmi:id="_BxwCYsuUEeGTNKcXcW2wuA" user="_BxwCYcuUEeGTNKcXcW2wuA" sections="_BxwCY8uUEeGTNKcXcW2wuA"/>
+  <projectUsages xmi:id="_By0ZYMuUEeGTNKcXcW2wuA" usedProjectURI="file:/Applications/MagicDraw%20UML/profiles/UML_Standard_Profile.mdzip" readonly="true" preferredProjectRepositoryType="" loadedAutomatically="true">
+    <usedProject href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.ci.metamodel.project#_VWTUgU_TEeCNOP_jel_PNg"/>
+    <mountPoints xmi:id="_By21osuUEeGTNKcXcW2wuA" sharePointID="magicdraw_uml_standard_profile_v_0001" containmentFeatureID="59" featureName="UML Model" containmentIndex="-1" containmentFeatureName="packagedElement">
+      <mountedPoint href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#magicdraw_uml_standard_profile_v_0001"/>
+      <mountedOn href="PROJECT-f392a83d7e259d5a6875099f8235cf5?resource=com.nomagic.magicdraw.uml_umodel.model#eee_1045467100313_135436_1"/>
+      <options xmi:id="_By21o8uUEeGTNKcXcW2wuA" key="preferredPath" value=""/>
+      <mountedSharePoint href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.ci.metamodel.project#_By21oMuUEeGTNKcXcW2wuA"/>
+    </mountPoints>
+    <properties xmi:id="_CYKiIMuUEeGTNKcXcW2wuA" key="usedVersion" value="17.0.2"/>
+    <properties xmi:id="_tx5MQMuUEeGTNKcXcW2wuA" key="LOCAL_PROJECT_ID" value="PROJECT-877558e9224f114d50dea1f39a1c119"/>
+  </projectUsages>
+  <projectUsages xmi:id="_CY0CYMuUEeGTNKcXcW2wuA" usedProjectURI="file:/Users/jeeva/.m2/repository/org/andromda/profiles/uml2/andromda-profile/3.4-SNAPSHOT/andromda-profile-3.4-SNAPSHOT.xml.zip" readonly="true" preferredProjectRepositoryType="" loadedAutomatically="true">
+    <usedProject href="PROJECT-eb671d3de8f97fbe3debfae57467f09c?resource=com.nomagic.ci.metamodel.project#PROJECT-aa8ccd72b8b947b8764215ce898d2b"/>
+    <mountPoints xmi:id="_0ivswNPeEeGR2rFSkF7vbQ" sharePointID="_8a70287_1078771814628_224704_589" containmentFeatureID="59" featureName="UML Model" containmentIndex="-1" containmentFeatureName="packagedElement">
+      <mountedPoint href="PROJECT-eb671d3de8f97fbe3debfae57467f09c?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_8a70287_1078771814628_224704_589"/>
+      <mountedOn href="PROJECT-f392a83d7e259d5a6875099f8235cf5?resource=com.nomagic.magicdraw.uml_umodel.model#eee_1045467100313_135436_1"/>
+      <options xmi:id="_0ivswdPeEeGR2rFSkF7vbQ" key="preferredPath" value=""/>
+      <mountedSharePoint href="PROJECT-eb671d3de8f97fbe3debfae57467f09c?resource=com.nomagic.ci.metamodel.project#_CfcO0suUEeGTNKcXcW2wuA"/>
+    </mountPoints>
+    <mountPoints xmi:id="_0iwT0NPeEeGR2rFSkF7vbQ" sharePointID="_17_0_1_2e90116_1302564025198_877618_2632" containmentFeatureID="59" featureName="UML Model" containmentIndex="-1" containmentFeatureName="packagedElement">
+      <mountedPoint href="PROJECT-eb671d3de8f97fbe3debfae57467f09c?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_17_0_1_2e90116_1302564025198_877618_2632"/>
+      <mountedOn href="PROJECT-f392a83d7e259d5a6875099f8235cf5?resource=com.nomagic.magicdraw.uml_umodel.model#eee_1045467100313_135436_1"/>
+      <options xmi:id="_0iwT0dPeEeGR2rFSkF7vbQ" key="preferredPath" value=""/>
+      <mountedSharePoint href="PROJECT-eb671d3de8f97fbe3debfae57467f09c?resource=com.nomagic.ci.metamodel.project#_CfcO0MuUEeGTNKcXcW2wuA"/>
+    </mountPoints>
+    <properties xmi:id="_CfuisMuUEeGTNKcXcW2wuA" key="loadIndex" value="true"/>
+    <properties xmi:id="_CfuiscuUEeGTNKcXcW2wuA" key="usedVersion"/>
+    <properties xmi:id="_tx5MQcuUEeGTNKcXcW2wuA" key="LOCAL_PROJECT_ID" value="PROJECT-eb671d3de8f97fbe3debfae57467f09c"/>
+  </projectUsages>
+  <projectUsages xmi:id="_CgWNwMuUEeGTNKcXcW2wuA" usedProjectURI="file:/Users/jeeva/.m2/repository/org/andromda/profiles/uml2/andromda-profile-datatype/3.4-SNAPSHOT/andromda-profile-datatype-3.4-SNAPSHOT.xml.zip" readonly="true" preferredProjectRepositoryType="" loadedAutomatically="true">
+    <usedProject href="PROJECT-22a38c78e483726a0feff728cec1044?resource=com.nomagic.ci.metamodel.project#PROJECT-defe54cd57ed5746673a6317d366dd"/>
+    <mountPoints xmi:id="_0iyJANPeEeGR2rFSkF7vbQ" sharePointID="_9_0_1fe00f9_1119336925546_238419_77" containmentFeatureID="59" featureName="UML Model" containmentIndex="-1" containmentFeatureName="packagedElement">
+      <mountedPoint href="PROJECT-22a38c78e483726a0feff728cec1044?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_1fe00f9_1119336925546_238419_77"/>
+      <mountedOn href="PROJECT-f392a83d7e259d5a6875099f8235cf5?resource=com.nomagic.magicdraw.uml_umodel.model#eee_1045467100313_135436_1"/>
+      <options xmi:id="_0iyJAdPeEeGR2rFSkF7vbQ" key="preferredPath" value=""/>
+      <mountedSharePoint href="PROJECT-22a38c78e483726a0feff728cec1044?resource=com.nomagic.ci.metamodel.project#_ClyucMuUEeGTNKcXcW2wuA"/>
+    </mountPoints>
+    <properties xmi:id="_Cp5LUMuUEeGTNKcXcW2wuA" key="loadIndex" value="true"/>
+    <properties xmi:id="_Cp5yYMuUEeGTNKcXcW2wuA" key="usedVersion"/>
+    <properties xmi:id="_tx5MQsuUEeGTNKcXcW2wuA" key="LOCAL_PROJECT_ID" value="PROJECT-22a38c78e483726a0feff728cec1044"/>
+  </projectUsages>
+  <projectUsages xmi:id="_MG4DIMuUEeGTNKcXcW2wuA" usedProjectURI="file:/Users/jeeva/.m2/repository/org/andromda/profiles/uml2/andromda-profile-messaging/3.4-SNAPSHOT/andromda-profile-messaging-3.4-SNAPSHOT.xml.zip" readonly="true" loadedAutomatically="true">
+    <usedProject href="PROJECT-a3842087847353943a903d36733d6b2?resource=com.nomagic.ci.metamodel.project#PROJECT-330c683a6ccfb2ca5ac5279313e852"/>
+    <mountPoints xmi:id="_0iz-MNPeEeGR2rFSkF7vbQ" sharePointID="_12_0_12ab03bf_1166898799812_358986_99" containmentFeatureID="59" featureName="UML Model" containmentIndex="-1" containmentFeatureName="packagedElement">
+      <mountedPoint href="PROJECT-a3842087847353943a903d36733d6b2?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_12_0_12ab03bf_1166898799812_358986_99"/>
+      <mountedOn href="PROJECT-eb671d3de8f97fbe3debfae57467f09c?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_17_0_1_2e90116_1302564025198_877618_2632"/>
+      <options xmi:id="_0iz-MdPeEeGR2rFSkF7vbQ" key="preferredPath" value="org.andromda.profile"/>
+      <mountedSharePoint href="PROJECT-a3842087847353943a903d36733d6b2?resource=com.nomagic.ci.metamodel.project#_MI7RkMuUEeGTNKcXcW2wuA"/>
+    </mountPoints>
+    <properties xmi:id="_MG4DIcuUEeGTNKcXcW2wuA" key="loadIndex" value="true"/>
+    <properties xmi:id="_tx5MQ8uUEeGTNKcXcW2wuA" key="LOCAL_PROJECT_ID" value="PROJECT-a3842087847353943a903d36733d6b2"/>
+  </projectUsages>
+  <projectUsages xmi:id="_Rxp0oMuUEeGTNKcXcW2wuA" usedProjectURI="file:/Users/jeeva/.m2/repository/org/andromda/profiles/uml2/andromda-profile-meta/3.4-SNAPSHOT/andromda-profile-meta-3.4-SNAPSHOT.xml.zip" readonly="true" loadedAutomatically="true">
+    <usedProject href="PROJECT-dc758356b32e81d9bc4383928d624a86?resource=com.nomagic.ci.metamodel.project#PROJECT-6ceaff6be9c59d7620631d687862f115"/>
+    <mountPoints xmi:id="_0i2acNPeEeGR2rFSkF7vbQ" sharePointID="_11_5_e240333_1154527253281_154549_26" containmentFeatureID="59" featureName="UML Model" containmentIndex="-1" containmentFeatureName="packagedElement">
+      <mountedPoint href="PROJECT-dc758356b32e81d9bc4383928d624a86?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_11_5_e240333_1154527253281_154549_26"/>
+      <mountedOn href="PROJECT-eb671d3de8f97fbe3debfae57467f09c?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_17_0_1_2e90116_1302564025198_877618_2632"/>
+      <options xmi:id="_0i2acdPeEeGR2rFSkF7vbQ" key="preferredPath" value="org.andromda.profile"/>
+      <mountedSharePoint href="PROJECT-dc758356b32e81d9bc4383928d624a86?resource=com.nomagic.ci.metamodel.project#_RzDi0MuUEeGTNKcXcW2wuA"/>
+    </mountPoints>
+    <properties xmi:id="_Rxp0ocuUEeGTNKcXcW2wuA" key="loadIndex" value="true"/>
+    <properties xmi:id="_tx5MRMuUEeGTNKcXcW2wuA" key="LOCAL_PROJECT_ID" value="PROJECT-dc758356b32e81d9bc4383928d624a86"/>
+  </projectUsages>
+  <projectUsages xmi:id="_U2p2sMuUEeGTNKcXcW2wuA" usedProjectURI="file:/Users/jeeva/.m2/repository/org/andromda/profiles/uml2/andromda-profile-persistence/3.4-SNAPSHOT/andromda-profile-persistence-3.4-SNAPSHOT.xml.zip" readonly="true" loadedAutomatically="true">
+    <usedProject href="PROJECT-5e80cdd08691456640d6403ea4f03a?resource=com.nomagic.ci.metamodel.project#PROJECT-efc1ee2097b1e0a2f22967b3e8679aa"/>
+    <mountPoints xmi:id="_0i4PoNPeEeGR2rFSkF7vbQ" sharePointID="_11_5_e240333_1154527540265_181005_899" containmentFeatureID="59" featureName="UML Model" containmentIndex="-1" containmentFeatureName="packagedElement">
+      <mountedPoint href="PROJECT-5e80cdd08691456640d6403ea4f03a?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_11_5_e240333_1154527540265_181005_899"/>
+      <mountedOn href="PROJECT-eb671d3de8f97fbe3debfae57467f09c?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_17_0_1_2e90116_1302564025198_877618_2632"/>
+      <options xmi:id="_0i4PodPeEeGR2rFSkF7vbQ" key="preferredPath" value="org.andromda.profile"/>
+      <mountedSharePoint href="PROJECT-5e80cdd08691456640d6403ea4f03a?resource=com.nomagic.ci.metamodel.project#_U9HEAMuUEeGTNKcXcW2wuA"/>
+    </mountPoints>
+    <properties xmi:id="_U2p2scuUEeGTNKcXcW2wuA" key="loadIndex" value="true"/>
+    <properties xmi:id="_tx5MRcuUEeGTNKcXcW2wuA" key="LOCAL_PROJECT_ID" value="PROJECT-5e80cdd08691456640d6403ea4f03a"/>
+  </projectUsages>
+  <projectUsages xmi:id="_XS52sMuUEeGTNKcXcW2wuA" usedProjectURI="file:/Users/jeeva/.m2/repository/org/andromda/profiles/uml2/andromda-profile-service/3.4-SNAPSHOT/andromda-profile-service-3.4-SNAPSHOT.xml.zip" readonly="true" loadedAutomatically="true">
+    <usedProject href="PROJECT-2053c9b3db4d83fbeff3426811af17a6?resource=com.nomagic.ci.metamodel.project#PROJECT-531ee47a1164e071f11cf8bc713e49"/>
+    <mountPoints xmi:id="_0i6E0NPeEeGR2rFSkF7vbQ" sharePointID="_11_5_e240333_1154527425687_111873_349" containmentFeatureID="59" featureName="UML Model" containmentIndex="-1" containmentFeatureName="packagedElement">
+      <mountedPoint href="PROJECT-2053c9b3db4d83fbeff3426811af17a6?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_11_5_e240333_1154527425687_111873_349"/>
+      <mountedOn href="PROJECT-eb671d3de8f97fbe3debfae57467f09c?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_17_0_1_2e90116_1302564025198_877618_2632"/>
+      <options xmi:id="_0i6E0dPeEeGR2rFSkF7vbQ" key="preferredPath" value="org.andromda.profile"/>
+      <mountedSharePoint href="PROJECT-2053c9b3db4d83fbeff3426811af17a6?resource=com.nomagic.ci.metamodel.project#_XV_m8MuUEeGTNKcXcW2wuA"/>
+    </mountPoints>
+    <properties xmi:id="_XS52scuUEeGTNKcXcW2wuA" key="loadIndex" value="true"/>
+    <properties xmi:id="_tx5MRsuUEeGTNKcXcW2wuA" key="LOCAL_PROJECT_ID" value="PROJECT-2053c9b3db4d83fbeff3426811af17a6"/>
+  </projectUsages>
+  <projectUsages xmi:id="_Zz-FQMuUEeGTNKcXcW2wuA" usedProjectURI="file:/Users/jeeva/.m2/repository/org/andromda/profiles/uml2/andromda-profile-webservice/3.4-SNAPSHOT/andromda-profile-webservice-3.4-SNAPSHOT.xml.zip" readonly="true" loadedAutomatically="true">
+    <usedProject href="PROJECT-7998b4d19d525624bbab84e6e16d987?resource=com.nomagic.ci.metamodel.project#PROJECT-83c392c7a0f05076e71989bd67a38823"/>
+    <mountPoints xmi:id="_0i8hENPeEeGR2rFSkF7vbQ" sharePointID="_9_0_2_12ab03bf_1120852932765_76536_0" containmentFeatureID="59" featureName="UML Model" containmentIndex="-1" containmentFeatureName="packagedElement">
+      <mountedPoint href="PROJECT-7998b4d19d525624bbab84e6e16d987?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_2_12ab03bf_1120852932765_76536_0"/>
+      <mountedOn href="PROJECT-f392a83d7e259d5a6875099f8235cf5?resource=com.nomagic.magicdraw.uml_umodel.model#eee_1045467100313_135436_1"/>
+      <options xmi:id="_0i8hEdPeEeGR2rFSkF7vbQ" key="preferredPath" value=""/>
+      <mountedSharePoint href="PROJECT-7998b4d19d525624bbab84e6e16d987?resource=com.nomagic.ci.metamodel.project#_Z3xnMMuUEeGTNKcXcW2wuA"/>
+    </mountPoints>
+    <properties xmi:id="_Zz-FQcuUEeGTNKcXcW2wuA" key="loadIndex" value="true"/>
+    <properties xmi:id="_tx5MR8uUEeGTNKcXcW2wuA" key="LOCAL_PROJECT_ID" value="PROJECT-7998b4d19d525624bbab84e6e16d987"/>
+  </projectUsages>
+  <projectUsages xmi:id="_b0SXMMuUEeGTNKcXcW2wuA" usedProjectURI="file:/Users/jeeva/.m2/repository/org/andromda/profiles/uml2/andromda-profile-xml/3.4-SNAPSHOT/andromda-profile-xml-3.4-SNAPSHOT.xml.zip" readonly="true" loadedAutomatically="true">
+    <usedProject href="PROJECT-f628ae1c9d151ec3bd65a246eb4179?resource=com.nomagic.ci.metamodel.project#PROJECT-353868b6aa7473a4fdd158c93a3422d"/>
+    <mountPoints xmi:id="_0i-9UNPeEeGR2rFSkF7vbQ" sharePointID="_9_0_2_12ab03bf_1120852471296_986007_0" containmentFeatureID="59" featureName="UML Model" containmentIndex="-1" containmentFeatureName="packagedElement">
+      <mountedPoint href="PROJECT-f628ae1c9d151ec3bd65a246eb4179?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_2_12ab03bf_1120852471296_986007_0"/>
+      <mountedOn href="PROJECT-f392a83d7e259d5a6875099f8235cf5?resource=com.nomagic.magicdraw.uml_umodel.model#eee_1045467100313_135436_1"/>
+      <options xmi:id="_0i-9UdPeEeGR2rFSkF7vbQ" key="preferredPath" value=""/>
+      <mountedSharePoint href="PROJECT-f628ae1c9d151ec3bd65a246eb4179?resource=com.nomagic.ci.metamodel.project#_b2xDcMuUEeGTNKcXcW2wuA"/>
+    </mountPoints>
+    <properties xmi:id="_b0SXMcuUEeGTNKcXcW2wuA" key="loadIndex" value="true"/>
+    <properties xmi:id="_tx5MSMuUEeGTNKcXcW2wuA" key="LOCAL_PROJECT_ID" value="PROJECT-f628ae1c9d151ec3bd65a246eb4179"/>
+  </projectUsages>
+  <projectUsages xmi:id="_h_vz4MuUEeGTNKcXcW2wuA" usedProjectURI="file:/Users/jeeva/.m2/repository/org/andromda/profiles/uml2/andromda-profile-presentation/3.4-SNAPSHOT/andromda-profile-presentation-3.4-SNAPSHOT.xml.zip" readonly="true" loadedAutomatically="true">
+    <usedProject href="PROJECT-c4761dfa50bf72fb60693efc8193242?resource=com.nomagic.ci.metamodel.project#PROJECT-705152582f2a802028148856a4d580aa"/>
+    <mountPoints xmi:id="_0jEc4NPeEeGR2rFSkF7vbQ" sharePointID="_11_5_e240333_1154527378140_885914_432" containmentFeatureID="59" featureName="UML Model" containmentIndex="-1" containmentFeatureName="packagedElement">
+      <mountedPoint href="PROJECT-c4761dfa50bf72fb60693efc8193242?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_11_5_e240333_1154527378140_885914_432"/>
+      <mountedOn href="PROJECT-eb671d3de8f97fbe3debfae57467f09c?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_17_0_1_2e90116_1302564025198_877618_2632"/>
+      <options xmi:id="_0jEc4dPeEeGR2rFSkF7vbQ" key="preferredPath" value="org.andromda.profile"/>
+      <mountedSharePoint href="PROJECT-c4761dfa50bf72fb60693efc8193242?resource=com.nomagic.ci.metamodel.project#_iDFbwMuUEeGTNKcXcW2wuA"/>
+    </mountPoints>
+    <properties xmi:id="_h_vz4cuUEeGTNKcXcW2wuA" key="loadIndex" value="true"/>
+    <properties xmi:id="_tx5MScuUEeGTNKcXcW2wuA" key="LOCAL_PROJECT_ID" value="PROJECT-c4761dfa50bf72fb60693efc8193242"/>
+  </projectUsages>
+  <projectUsages xmi:id="_lobKwMuUEeGTNKcXcW2wuA" usedProjectURI="file:/Users/jeeva/.m2/repository/org/andromda/profiles/uml2/andromda-profile-process/3.4-SNAPSHOT/andromda-profile-process-3.4-SNAPSHOT.xml.zip" readonly="true" loadedAutomatically="true">
+    <usedProject href="PROJECT-3aa503d7b65c1a6d251ae1e6ab827e8?resource=com.nomagic.ci.metamodel.project#PROJECT-bdc8ca4aa7bcc2c9a759c1375daf69"/>
+    <mountPoints xmi:id="_0jG5INPeEeGR2rFSkF7vbQ" sharePointID="_11_5_e240333_1154527578125_463523_83" containmentFeatureID="59" featureName="UML Model" containmentIndex="-1" containmentFeatureName="packagedElement">
+      <mountedPoint href="PROJECT-3aa503d7b65c1a6d251ae1e6ab827e8?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_11_5_e240333_1154527578125_463523_83"/>
+      <mountedOn href="PROJECT-eb671d3de8f97fbe3debfae57467f09c?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_17_0_1_2e90116_1302564025198_877618_2632"/>
+      <options xmi:id="_0jG5IdPeEeGR2rFSkF7vbQ" key="preferredPath" value="org.andromda.profile"/>
+      <mountedSharePoint href="PROJECT-3aa503d7b65c1a6d251ae1e6ab827e8?resource=com.nomagic.ci.metamodel.project#_lqkf0MuUEeGTNKcXcW2wuA"/>
+    </mountPoints>
+    <properties xmi:id="_lobKwcuUEeGTNKcXcW2wuA" key="loadIndex" value="true"/>
+    <properties xmi:id="_tx5MSsuUEeGTNKcXcW2wuA" key="LOCAL_PROJECT_ID" value="PROJECT-3aa503d7b65c1a6d251ae1e6ab827e8"/>
+  </projectUsages>
+  <features xmi:id="_BwvVwMuUEeGTNKcXcW2wuA" name="UML Model" namespace="com.nomagic.magicdraw.uml_model" version="17.0" sections="_BwvVwcuUEeGTNKcXcW2wuA" internalVersion="1"/>
+  <features xmi:id="_BxvbUMuUEeGTNKcXcW2wuA" name="Project Options" namespace="com.nomagic.magicdraw.core.project.options" version="1.0" sections="_BxvbUcuUEeGTNKcXcW2wuA _BxwCY8uUEeGTNKcXcW2wuA" internalVersion="1"/>
+  <features xmi:id="_Cp_R8MuUEeGTNKcXcW2wuA" name="Language Properties" namespace="com.nomagic.magicdraw.ce.languageproperties" version="1.0" internalVersion="1"/>
+  <features xmi:id="_Cp_R8cuUEeGTNKcXcW2wuA" name="Code Engineering" namespace="com.nomagic.magicdraw.ce" version="1.0" sections="_CqDjYMuUEeGTNKcXcW2wuA" internalVersion="1"/>
+  <properties xmi:id="_BykhwMuUEeGTNKcXcW2wuA" key="standardProfile" value="false"/>
+  <properties xmi:id="_BykhwcuUEeGTNKcXcW2wuA" key="internalVersion" value="1.3"/>
+  <properties xmi:id="_tvD6sMuUEeGTNKcXcW2wuA" key="exporterDescription" value="ac ed 0 5 73 72 0 2e 63 6f 6d 2e 6e 6f 6d 61 67 69 63 2e 70 65 72 73 69 73 74 65 6e 63 65 2e 58 6d 69 45 78 70 6f 72 74 65 72 44 65 73 63 72 69 70 74 69 6f 6e f5 3e fd c8 e7 3c 3b d7 2 0 5 4c 0 5 6d 4e 61 6d 65 74 0 12 4c 6a 61 76 61 2f 6c 61 6e 67 2f 53 74 72 69 6e 67 3b 4c 0 12 6d 52 65 71 75 69 72 65 64 50 6c 75 67 69 6e 4d 61 70 74 0 f 4c 6a 61 76 61 2f 75 74 69 6c 2f 4d 61 70 3b 4c 0 12 6d 52 65 71 75 69 72 65 64 52 65 73 6f 75 72 63 65 73 74 0 10 4c 6a 61 76 61 2f 75 74 69 6c 2f 4c 69 73 74 3b 4c 0 10 6d 55 4d 4c 4e 61 6d 65 73 70 61 63 65 55 52 49 71 0 7e 0 1 4c 0 8 6d 56 65 72 73 69 6f 6e 71 0 7e 0 1 78 70 74 0 d 4d 61 67 69 63 44 72 61 77 20 55 4d 4c 73 72 0 11 6a 61 76 61 2e 75 74 69 6c 2e 48 61 73 68 4d 61 70 5 7 da c1 c3 16 60 d1 3 0 2 46 0 a 6c 6f 61 64 46 61 63 74 6f 72 49 0 9 74 68 72 65 73 68 6f 6c 64 78 70 3f 40 0 0 0 0 0 c 77 8 0 0 0 10 0 0 0 0 78 73 72 0 13 6a 61 76 61 2e 75 74 69 6c 2e 41 72 72 61 79 4c 69 73 74 78 81 d2 1d 99 c7 61 9d 3 0 1 49 0 4 73 69 7a 65 78 70 0 0 0 0 77 4 0 0 0 0 78 70 74 0 6 31 37 2e 30 2e 32 "/>
+  <properties xmi:id="_tvHlEMuUEeGTNKcXcW2wuA" key="fileVersion" value="57"/>
+  <properties xmi:id="_tvKoYMuUEeGTNKcXcW2wuA" key="MODEL_ROOT_HREF" value="local:/PROJECT-f392a83d7e259d5a6875099f8235cf5?resource=com.nomagic.magicdraw.uml_umodel.model#eee_1045467100313_135436_1"/>
+  <properties xmi:id="_twVGAMuUEeGTNKcXcW2wuA" key="MODULES_DIRS" value="&lt;maven2.repository>/org/andromda/profiles/uml2/andromda-profile/3.4-SNAPSHOT/&lt;>&lt;maven2.repository>/org/andromda/profiles/uml2/andromda-profile-datatype/3.4-SNAPSHOT/&lt;>&lt;maven2.repository>/org/andromda/profiles/uml2/andromda-profile-messaging/3.4-SNAPSHOT/&lt;>&lt;maven2.repository>/org/andromda/profiles/uml2/andromda-profile-meta/3.4-SNAPSHOT/&lt;>&lt;maven2.repository>/org/andromda/profiles/uml2/andromda-profile-presentation/3.4-SNAPSHOT/&lt;>&lt;maven2.repository>/org/andromda/profiles/uml2/andromda-profile-persistence/3.4-SNAPSHOT/&lt;>&lt;maven2.repository>/org/andromda/profiles/uml2/andromda-profile-process/3.4-SNAPSHOT/&lt;>&lt;maven2.repository>/org/andromda/profiles/uml2/andromda-profile-service/3.4-SNAPSHOT/&lt;>&lt;maven2.repository>/org/andromda/profiles/uml2/andromda-profile-webservice/3.4-SNAPSHOT/&lt;>&lt;maven2.repository>/org/andromda/profiles/uml2/andromda-profile-xml/3.4-SNAPSHOT/&lt;>&lt;project.dir>&lt;>&lt;install.root>/profiles&lt;>&lt;install.root>/modelLibraries&lt;>/&lt;maven2.repository>/org/andromda/profiles/uml2/andromda-profile-messaging/3.4-SNAPSHOT&lt;>/&lt;maven2.repository>/org/andromda/profiles/uml2/andromda-profile-meta/3.4-SNAPSHOT&lt;>/&lt;maven2.repository>/org/andromda/profiles/uml2/andromda-profile-persistence/3.4-SNAPSHOT&lt;>/&lt;maven2.repository>/org/andromda/profiles/uml2/andromda-profile-service/3.4-SNAPSHOT&lt;>/&lt;maven2.repository>/org/andromda/profiles/uml2/andromda-profile-webservice/3.4-SNAPSHOT&lt;>/&lt;maven2.repository>/org/andromda/profiles/uml2/andromda-profile-xml/3.4-SNAPSHOT&lt;>/&lt;maven2.repository>/org/andromda/profiles/uml2/andromda-profile-presentation/3.4-SNAPSHOT&lt;>/&lt;maven2.repository>/org/andromda/profiles/uml2/andromda-profile-process/3.4-SNAPSHOT"/>
+  <projectUsers xmi:id="_BxwCYcuUEeGTNKcXcW2wuA" userId="default"/>
+</project:Project>
+</filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='proxy.local__PROJECT$h5e80cdd08691456640d6403ea4f03a_resource_com$dnomagic$dmagicdraw$duml_umodel$dshared_umodel$dsnapshot' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'>
+<uml:Profile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.nomagic.com/magicdraw/UML/2.4.1" xmi:id="_11_5_e240333_1154527540265_181005_899" ID="_11_5_e240333_1154527540265_181005_899" name="andromda-persistence" visibility="public">
+  <appliedStereotypeInstance xmi:id="_17_0_1_2e90116_1302124483303_822637_1516" ID="_17_0_1_2e90116_1302124483303_822637_1516" visibility="public">
+    <classifier xsi:type="uml:Stereotype" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#magicdraw_1046861421236_39100_29"/>
+  </appliedStereotypeInstance>
+</uml:Profile>
+</filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='personal-com.nomagic.magicdraw.core.project.options.personalprojectoptions' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'>
+<project.options:UserProjectOptions xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:project.options="http://www.nomagic.com/ns/magicdraw/core/project/options/1.0" xmi:id="_BxwCZcuUEeGTNKcXcW2wuA" optionsString="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" diagramViewStyleString="UEsDBBQACAAIALej9kAAAAAAAAAAAAAAAAAAAAAAzZZdT+JAFIav9Vdw1yvtfLUz3RSMSt2QrEqA/fCGyWw7wCRtp2kLor9+R4pAcVFYjdmrSXvOe857nk5m6p/Nk7gxk3mhdNq04CmwGjINdaTScdP6Prg6YdZZ6/jY7+Y6k3n58EMVqtT5eRjKzKyt4yM/iYJYJjItG7JaL2NRFE2rr5Islv3yIZaWyTvyU5HIVn9w9y3g7c751975Ne/2brtBb9AJ+r69CD/lRXIkpnHZmCfqy0zEU9m0RiIupGUvwrv6PVu8FqkYy3zRc9mUQ8oBR9xFFCAQcogJYo5LIEIUc8iwRyhHxCFrF0d+Vq/Xae8oQwlkLsDcoa4HTBnmYN9+KV7U3OX9Zpr8lvnzBJX1tQOjftQ6uRKhQb6uvSy6zmvLIsxVVppvWZPwdtC/7HW6g87tzVpez64qLXBvgn/aEfYyWD5ktRhaRWJ93xPpeEtJAEQeIy7BiDBIgxPirBQTNZ68kGAjQQxh4rqYOYgxN8BsKfHtFbvXUV5oHUuRvsLSMFEzuTfHKv0dDMt8Kj9+ikiJcS6S20ymMtp7mJrqk2d6c5MvzfXDXMdxV5uTxnj4dehsW/J3DAk2Nv/ftvgJOoWEEoZdwgLvc3DcvQ/H3X+L43KiVSjfxvFTpZG+v9DTNCoOZbGpPRBEy7ertXoXLtzWTsMhIkPXI0OH0hUm00/Oa4zgx58EiZirRD0ecAqsFPtC2HK7/fgvV7JnrlI4kgCMPA4h9DB2PRdSB3DKECOAM3j4bQwwdbARA05MJUi4icEdt3F9iNqTb+/63/kDUEsHCFi3vAhSAgAAMQkAAFBLAQIUABQACAAIALej9kBYt7wIUgIAADEJAAAAAAAAAAAAAAAAAAAAAAAAAABQSwUGAAAAAAEAAQAuAAAAgAIAAAAA"/>
+</filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='proxy.local__PROJECT$hf628ae1c9d151ec3bd65a246eb4179_resource_com$dnomagic$dmagicdraw$duml_umodel$dshared_umodel$dsnapshot' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'>
+<uml:Profile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.nomagic.com/magicdraw/UML/2.4.1" xmi:id="_9_0_2_12ab03bf_1120852471296_986007_0" ID="_9_0_2_12ab03bf_1120852471296_986007_0" name="andromda-xml" visibility="public">
+  <appliedStereotypeInstance xmi:id="_12_1_2e90116_1239133781907_132933_345" ID="_12_1_2e90116_1239133781907_132933_345" visibility="public">
+    <classifier xsi:type="uml:Stereotype" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#magicdraw_1046861421236_39100_29"/>
+  </appliedStereotypeInstance>
+  <packagedElement xsi:type="uml:Enumeration" xmi:id="_9_5_1_2e90116_1229444494320_545138_93" ID="_9_5_1_2e90116_1229444494320_545138_93" name="XmlNsForm" visibility="public">
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1229445218736_760755_105" ID="_9_5_1_2e90116_1229445218736_760755_105" name="default" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1229444503961_844930_94" ID="_9_5_1_2e90116_1229444503961_844930_94" name="QUALIFIED" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1229444511414_70576_95" ID="_9_5_1_2e90116_1229444511414_70576_95" name="UNQUALIFIED" visibility="public"/>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Extension" xmi:id="_12_1_2e90116_1239133781922_620637_357" ID="_12_1_2e90116_1239133781922_620637_357" visibility="public" memberEnd="_12_1_2e90116_1239133781922_592019_358 _12_1_2e90116_1239133781922_161099_359">
+    <ownedEnd xsi:type="uml:ExtensionEnd" xmi:id="_12_1_2e90116_1239133781922_161099_359" ID="_12_1_2e90116_1239133781922_161099_359" name="extension_XmlSchema" visibility="private" type="_9_5_1_2e90116_1229363944185_345791_1" aggregation="composite"/>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Stereotype" xmi:id="_9_5_1_2e90116_1229363944185_345791_1" ID="_9_5_1_2e90116_1229363944185_345791_1" name="XmlSchema" visibility="public">
+    <ownedAttribute xmi:id="_9_5_1_2e90116_1229364135078_149986_2" ID="_9_5_1_2e90116_1229364135078_149986_2" name="andromda_xml_namespace" visibility="private">
+      <type xsi:type="uml:PrimitiveType" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_2_91a0295_1110274713995_297054_0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9_5_1_2e90116_1229444347178_660902_91" ID="_9_5_1_2e90116_1229444347178_660902_91" name="andromda_xml_xmlns" visibility="private">
+      <type xsi:type="uml:PrimitiveType" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_2_91a0295_1110274713995_297054_0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9_5_1_2e90116_1229444406241_967293_92" ID="_9_5_1_2e90116_1229444406241_967293_92" name="andromda_xml_attributeFormDefault" visibility="private" type="_9_5_1_2e90116_1229444494320_545138_93"/>
+    <ownedAttribute xmi:id="_9_5_1_2e90116_1229444585853_88316_97" ID="_9_5_1_2e90116_1229444585853_88316_97" name="andromda_xml_elementFormDefault" visibility="private" type="_9_5_1_2e90116_1229444494320_545138_93"/>
+    <ownedAttribute xmi:id="_12_1_2e90116_1239133781922_592019_358" ID="_12_1_2e90116_1239133781922_592019_358" name="base_Package" visibility="private">
+      <type xsi:type="uml:Class" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_62a020a_1105704885298_713292_7913"/>
+    </ownedAttribute>
+  </packagedElement>
+</uml:Profile>
+</filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='proxy.local__PROJECT$h2053c9b3db4d83fbeff3426811af17a6_resource_com$dnomagic$dmagicdraw$duml_umodel$dshared_umodel$dsnapshot' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'>
+<uml:Profile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.nomagic.com/magicdraw/UML/2.4.1" xmi:id="_11_5_e240333_1154527425687_111873_349" ID="_11_5_e240333_1154527425687_111873_349" name="andromda-service" visibility="public">
+  <appliedStereotypeInstance xmi:id="_17_0_1_2e90116_1302124550962_827509_1516" ID="_17_0_1_2e90116_1302124550962_827509_1516" visibility="public">
+    <classifier xsi:type="uml:Stereotype" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#magicdraw_1046861421236_39100_29"/>
+  </appliedStereotypeInstance>
+</uml:Profile>
+</filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='BINARY-6406a4bf-0935-4b0c-9339-eca4ba653901' type='XML' header='&lt;?xml version=&#39;1.0&#39; encoding=&#39;UTF-8&#39;?&gt;'>
+
+<mdOwnedViews>
+	<mdElement elementClass='DiagramFrame' xmi:id='_17_0_2_627020c_1342857418341_756898_2718'>
+		<elementID xmi:idref='_17_0_2_627020c_1342856412157_706866_2434'/>
+		<geometry>5, 5, 1146, 1026</geometry>
+		<compartment compartmentID='TAGGED_VALUES'/>
+		<mdOwnedViews/>
+	</mdElement>
+	<mdElement elementClass='Class' xmi:id='_17_0_2_627020c_1342856440361_106783_2456'>
+		<elementID xmi:idref='_17_0_2_627020c_1342122922746_402460_2620'/>
+		<geometry>227, 347, 104, 69</geometry>
+		<compartment compartmentID='TAGGED_VALUES2'/>
+		<mdOwnedViews/>
+	</mdElement>
+	<mdElement elementClass='Class' xmi:id='_17_0_2_627020c_1342856469601_141136_2495'>
+		<elementID xmi:idref='_17_0_2_627020c_1342117383787_415604_2610'/>
+		<geometry>49, 347, 133, 69</geometry>
+		<compartment compartmentID='TAGGED_VALUES2'/>
+		<mdOwnedViews/>
+	</mdElement>
+	<mdElement elementClass='Class' xmi:id='_17_0_2_627020c_1342856495148_132019_2515'>
+		<elementID xmi:idref='_17_0_2_627020c_1342114394187_989578_2442'/>
+		<geometry>49, 219, 132, 83</geometry>
+		<compartment compartmentID='TAGGED_VALUES2'/>
+		<mdOwnedViews/>
+	</mdElement>
+	<mdElement elementClass='Class' xmi:id='_17_0_2_627020c_1342856495168_142971_2535'>
+		<elementID xmi:idref='_17_0_2_627020c_1342114387291_829821_2441'/>
+		<geometry>226, 219, 100, 83</geometry>
+		<compartment compartmentID='TAGGED_VALUES2'/>
+		<mdOwnedViews/>
+	</mdElement>
+	<mdElement elementClass='Class' xmi:id='_17_0_2_627020c_1342856681672_278622_2612'>
+		<elementID xmi:idref='_17_0_2_627020c_1342856615598_374250_2595'/>
+		<geometry>49, 63, 357, 97</geometry>
+		<compartment compartmentID='TAGGED_VALUES2'/>
+		<mdOwnedViews/>
+	</mdElement>
+</mdOwnedViews></filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='proxy.local__PROJECT$h7998b4d19d525624bbab84e6e16d987_resource_com$dnomagic$dmagicdraw$duml_umodel$dshared_umodel$dsnapshot' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'>
+<uml:Profile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.nomagic.com/magicdraw/UML/2.4.1" xmi:id="_9_0_2_12ab03bf_1120852932765_76536_0" ID="_9_0_2_12ab03bf_1120852932765_76536_0" name="andromda-webservice" visibility="public">
+  <appliedStereotypeInstance xmi:id="_16_5_2_2e90116_1245939975381_320428_382" ID="_16_5_2_2e90116_1245939975381_320428_382" visibility="public">
+    <classifier xsi:type="uml:Stereotype" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#magicdraw_1046861421236_39100_29"/>
+  </appliedStereotypeInstance>
+  <packagedElement xsi:type="uml:Enumeration" xmi:id="_9_0_1fe00f9_1119337599234_576105_6" ID="_9_0_1fe00f9_1119337599234_576105_6" name="WebServiceStyle" visibility="public">
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1229975836527_451671_2" ID="_9_5_1_2e90116_1229975836527_451671_2" name="default" visibility="public"/>
+    <ownedLiteral xmi:id="_9_0_1fe00f9_1119337599234_488961_3" ID="_9_0_1fe00f9_1119337599234_488961_3" name="wrapped" visibility="public"/>
+    <ownedLiteral xmi:id="_9_0_1fe00f9_1119337599234_630370_4" ID="_9_0_1fe00f9_1119337599234_630370_4" name="document" visibility="public"/>
+    <ownedLiteral xmi:id="_9_0_1fe00f9_1119337599234_330336_5" ID="_9_0_1fe00f9_1119337599234_330336_5" name="rpc" visibility="public"/>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Stereotype" xmi:id="_9_0_1fe00f9_1119337599234_292426_17" ID="_9_0_1fe00f9_1119337599234_292426_17" name="WebService" visibility="public">
+    <ownedAttribute xmi:id="_9_0_1fe00f9_1119337599234_534435_10" ID="_9_0_1fe00f9_1119337599234_534435_10" name="andromda_webservice_use" visibility="private" type="_9_0_1fe00f9_1119337599234_508718_16"/>
+    <ownedAttribute xmi:id="_9_0_1fe00f9_1119337599234_782725_11" ID="_9_0_1fe00f9_1119337599234_782725_11" name="andromda_webservice_provider" visibility="private" type="_9_0_1fe00f9_1119337599234_816697_9"/>
+    <ownedAttribute xmi:id="_9_0_1fe00f9_1119337599234_448866_13" ID="_9_0_1fe00f9_1119337599234_448866_13" name="andromda_webservice_style" visibility="private" type="_9_0_1fe00f9_1119337599234_576105_6"/>
+    <ownedAttribute xmi:id="_9_5_1_2e90116_1229377882176_428562_0" ID="_9_5_1_2e90116_1229377882176_428562_0" name="andromda_schema_validation" visibility="private" type="_9_5_1_2090114_1235189840952_369943_0"/>
+    <ownedAttribute xmi:id="_9_5_1_2e90116_1229442640625_526670_86" ID="_9_5_1_2e90116_1229442640625_526670_86" name="andromda_webservice_wsdlSoapAddress" visibility="private">
+      <type xsi:type="uml:PrimitiveType" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_2_91a0295_1110274713995_297054_0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9_5_1_2e90116_1229442883628_896777_91" ID="_9_5_1_2e90116_1229442883628_896777_91" name="andromda_jaxb_simpleBindingMode" visibility="private" type="_9_5_1_2090114_1235189840952_369943_0"/>
+    <ownedAttribute xmi:id="_9_5_1_2e90116_1229443069302_564948_97" ID="_9_5_1_2e90116_1229443069302_564948_97" name="andromda_jaxb_xjcArguments" visibility="private">
+      <type xsi:type="uml:PrimitiveType" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_2_91a0295_1110274713995_297054_0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9_5_1_2e90116_1238680689748_661759_0" ID="_9_5_1_2e90116_1238680689748_661759_0" name="andromda_serialVersionUID" visibility="private">
+      <type xsi:type="uml:PrimitiveType" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_2_91a0295_1110274713995_297054_0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9_5_1_2e90116_1244667020125_652295_0" ID="_9_5_1_2e90116_1244667020125_652295_0" name="andromda_REST" visibility="private" type="_9_5_1_2090114_1235189840952_369943_0"/>
+    <ownedAttribute xmi:id="_9_5_1_2e90116_1244667139034_234059_2" ID="_9_5_1_2e90116_1244667139034_234059_2" name="andromda_REST_contexts" visibility="private">
+      <type xsi:type="uml:PrimitiveType" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_2_91a0295_1110274713995_297054_0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9_5_1_2e90116_1244667114346_428724_1" ID="_9_5_1_2e90116_1244667114346_428724_1" name="andromda_REST_path" visibility="private">
+      <type xsi:type="uml:PrimitiveType" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_2_91a0295_1110274713995_297054_0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9_5_1_2e90116_1244667632234_869569_25" ID="_9_5_1_2e90116_1244667632234_869569_25" name="andromda_REST_request_type" visibility="private" type="_9_5_1_2e90116_1244667162410_222611_3"/>
+    <ownedAttribute xmi:id="_9_5_1_2e90116_1244668841156_733795_152" ID="_9_5_1_2e90116_1244668841156_733795_152" name="andromda_cache_type" visibility="private">
+      <type xsi:type="uml:PrimitiveType" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_2_91a0295_1110274713995_297054_0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9_5_1_2e90116_1244668865266_982595_153" ID="_9_5_1_2e90116_1244668865266_982595_153" name="andromda_REST_produces" visibility="private" type="_9_5_1_2e90116_1244667996150_450267_125"/>
+    <ownedAttribute xmi:id="_9_5_1_2e90116_1244668937439_119646_154" ID="_9_5_1_2e90116_1244668937439_119646_154" name="andromda_REST_consumes" visibility="private" type="_9_5_1_2e90116_1244667996150_450267_125"/>
+    <ownedAttribute xmi:id="_9_5_1_2e90116_1244668967065_769215_155" ID="_9_5_1_2e90116_1244668967065_769215_155" name="andromda_REST_provider" visibility="private" type="_9_5_1_2090114_1235189840952_369943_0"/>
+    <ownedAttribute xmi:id="_9_5_1_2e90116_1244669030911_408606_156" ID="_9_5_1_2e90116_1244669030911_408606_156" name="andromda_REST_target" visibility="private">
+      <type xsi:type="uml:PrimitiveType" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_2_91a0295_1110274713995_297054_0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9_5_1_2e90116_1244669044036_444640_157" ID="_9_5_1_2e90116_1244669044036_444640_157" name="andromda_REST_retention" visibility="private">
+      <type xsi:type="uml:PrimitiveType" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_2_91a0295_1110274713995_297054_0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9_5_1_2e90116_1244669063208_479696_158" ID="_9_5_1_2e90116_1244669063208_479696_158" name="andromda_REST_http_method" visibility="private">
+      <type xsi:type="uml:PrimitiveType" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_2_91a0295_1110274713995_297054_0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9_5_1_2e90116_1244670528949_115570_186" ID="_9_5_1_2e90116_1244670528949_115570_186" name="andromda_service_logging" visibility="private" type="_9_5_1_2090114_1235189840952_369943_0"/>
+    <ownedAttribute xmi:id="_16_5_2_2e90116_1245939975381_640318_368" ID="_16_5_2_2e90116_1245939975381_640318_368" name="base_Class" visibility="private">
+      <type xsi:type="uml:Class" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_62a020a_1105704885343_144138_7929"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Enumeration" xmi:id="_9_0_1fe00f9_1119337599234_816697_9" ID="_9_0_1fe00f9_1119337599234_816697_9" name="WebServiceProvider" visibility="public">
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1229975832824_536077_1" ID="_9_5_1_2e90116_1229975832824_536077_1" name="default" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1229443036177_166066_92" ID="_9_5_1_2e90116_1229443036177_166066_92" name="JAX-WS" visibility="public"/>
+    <ownedLiteral xmi:id="_9_0_1fe00f9_1119337599234_319948_7" ID="_9_0_1fe00f9_1119337599234_319948_7" name="RPC" visibility="public"/>
+    <ownedLiteral xmi:id="_9_0_1fe00f9_1119337599234_791334_8" ID="_9_0_1fe00f9_1119337599234_791334_8" name="EJB" visibility="public"/>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Enumeration" xmi:id="_9_0_1fe00f9_1119337599234_508718_16" ID="_9_0_1fe00f9_1119337599234_508718_16" name="WebServiceUse" visibility="public">
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1229975840386_222959_3" ID="_9_5_1_2e90116_1229975840386_222959_3" name="default" visibility="public"/>
+    <ownedLiteral xmi:id="_9_0_1fe00f9_1119337599234_412593_14" ID="_9_0_1fe00f9_1119337599234_412593_14" name="literal" visibility="public"/>
+    <ownedLiteral xmi:id="_9_0_1fe00f9_1119337599234_434482_15" ID="_9_0_1fe00f9_1119337599234_434482_15" name="encoded" visibility="public"/>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Stereotype" xmi:id="_9_5_1_2e90116_1229364633835_405645_0" ID="_9_5_1_2e90116_1229364633835_405645_0" name="WebFault" visibility="public">
+    <ownedAttribute xmi:id="_16_5_2_2e90116_1245939975381_806359_378" ID="_16_5_2_2e90116_1245939975381_806359_378" name="base_Class" visibility="private">
+      <type xsi:type="uml:Class" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_62a020a_1105704885343_144138_7929"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Enumeration" xmi:id="_9_5_1_2090114_1235189840952_369943_0" ID="_9_5_1_2090114_1235189840952_369943_0" name="TernaryBoolean" visibility="public">
+    <ownedLiteral xmi:id="_9_5_1_2090114_1235189850741_866785_1" ID="_9_5_1_2090114_1235189850741_866785_1" name="default" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2090114_1235189856621_713255_2" ID="_9_5_1_2090114_1235189856621_713255_2" name="false" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2090114_1235189863330_559206_3" ID="_9_5_1_2090114_1235189863330_559206_3" name="true" visibility="public"/>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Enumeration" xmi:id="_9_5_1_2e90116_1244667162410_222611_3" ID="_9_5_1_2e90116_1244667162410_222611_3" name="HttpRequestType" visibility="public">
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1244667310335_553294_14" ID="_9_5_1_2e90116_1244667310335_553294_14" name="default" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1244667250287_986803_8" ID="_9_5_1_2e90116_1244667250287_986803_8" name="GET" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1244667269569_142226_11" ID="_9_5_1_2e90116_1244667269569_142226_11" name="POST" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1244667274100_832188_12" ID="_9_5_1_2e90116_1244667274100_832188_12" name="PUT" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1244667278834_640800_13" ID="_9_5_1_2e90116_1244667278834_640800_13" name="DELETE" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1244760701526_970884_99" ID="_9_5_1_2e90116_1244760701526_970884_99" name="HEADER" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1244760709526_911121_100" ID="_9_5_1_2e90116_1244760709526_911121_100" name="OPTIONS" visibility="public"/>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Enumeration" xmi:id="_9_5_1_2e90116_1244667996150_450267_125" ID="_9_5_1_2e90116_1244667996150_450267_125" name="ProviderMediaType" visibility="public">
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1244668684105_460013_151" ID="_9_5_1_2e90116_1244668684105_460013_151" name="default" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1244668134809_955786_126" ID="_9_5_1_2e90116_1244668134809_955786_126" name="ApplicationXML" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1244668229609_453091_132" ID="_9_5_1_2e90116_1244668229609_453091_132" name="TextPlain" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1244668145591_191600_127" ID="_9_5_1_2e90116_1244668145591_191600_127" name="TextXML" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1244668180311_817249_130" ID="_9_5_1_2e90116_1244668180311_817249_130" name="ApplicationAtom" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1244668154794_447592_128" ID="_9_5_1_2e90116_1244668154794_447592_128" name="ApplicationJSON" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1244668163748_775887_129" ID="_9_5_1_2e90116_1244668163748_775887_129" name="ApplicationFastinfoset" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1244668242031_324068_133" ID="_9_5_1_2e90116_1244668242031_324068_133" name="ApplicationFormURLEncoded" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1244668198999_904629_131" ID="_9_5_1_2e90116_1244668198999_904629_131" name="Wildcard" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1244668407723_958396_144" ID="_9_5_1_2e90116_1244668407723_958396_144" name="MultipartFixed" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1244668647088_444183_150" ID="_9_5_1_2e90116_1244668647088_444183_150" name="MultipartFormData" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1244668611525_638328_149" ID="_9_5_1_2e90116_1244668611525_638328_149" name="MultipartMixed" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1245794659837_958681_2" ID="_9_5_1_2e90116_1245794659837_958681_2" name="MultipartRelated" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1245794669196_792244_3" ID="_9_5_1_2e90116_1245794669196_792244_3" name="MultipartAlternative" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1244670171596_531228_183" ID="_9_5_1_2e90116_1244670171596_531228_183" name="ApplicationOctetStream" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1245076086441_217019_117" ID="_9_5_1_2e90116_1245076086441_217019_117" name="ApplicationAtomXML" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1245076150177_99432_118" ID="_9_5_1_2e90116_1245076150177_99432_118" name="ApplicationXhtmlXML" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1245076180553_909821_119" ID="_9_5_1_2e90116_1245076180553_909821_119" name="ApplicationSvgXML" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1245794471785_47747_0" ID="_9_5_1_2e90116_1245794471785_47747_0" name="ApplicationAtomEntry" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1245794606492_202879_1" ID="_9_5_1_2e90116_1245794606492_202879_1" name="ApplicationXMLAll" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1244668567899_149276_148" ID="_9_5_1_2e90116_1244668567899_149276_148" name="ApplicationYaml" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1244668518788_735823_146" ID="_9_5_1_2e90116_1244668518788_735823_146" name="TextXYaml" visibility="public"/>
+    <ownedLiteral xmi:id="_9_5_1_2e90116_1244668564914_420103_147" ID="_9_5_1_2e90116_1244668564914_420103_147" name="TextYaml" visibility="public"/>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Extension" xmi:id="_16_5_2_2e90116_1245939975381_100928_367" ID="_16_5_2_2e90116_1245939975381_100928_367" visibility="public" memberEnd="_16_5_2_2e90116_1245939975381_640318_368 _16_5_2_2e90116_1245939975381_332588_369">
+    <ownedEnd xsi:type="uml:ExtensionEnd" xmi:id="_16_5_2_2e90116_1245939975381_332588_369" ID="_16_5_2_2e90116_1245939975381_332588_369" name="extension_WebService" visibility="private" type="_9_0_1fe00f9_1119337599234_292426_17" aggregation="composite"/>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Extension" xmi:id="_16_5_2_2e90116_1245939975381_388143_377" ID="_16_5_2_2e90116_1245939975381_388143_377" visibility="public" memberEnd="_16_5_2_2e90116_1245939975381_806359_378 _16_5_2_2e90116_1245939975381_754486_379">
+    <ownedEnd xsi:type="uml:ExtensionEnd" xmi:id="_16_5_2_2e90116_1245939975381_754486_379" ID="_16_5_2_2e90116_1245939975381_754486_379" name="extension_WebFault" visibility="private" type="_9_5_1_2e90116_1229364633835_405645_0" aggregation="composite"/>
+  </packagedElement>
+</uml:Profile>
+</filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='proxy.local__PROJECT$h22a38c78e483726a0feff728cec1044_resource_com$dnomagic$dmagicdraw$duml_umodel$dshared_umodel$dsnapshot' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'>
+<uml:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.nomagic.com/magicdraw/UML/2.4.1" xmi:id="_9_0_1fe00f9_1119336925546_238419_77" ID="_9_0_1fe00f9_1119336925546_238419_77" name="datatype" visibility="public">
+  <appliedStereotypeInstance xmi:id="_17_0_1_2e90116_1297278575733_338228_1516" ID="_17_0_1_2e90116_1297278575733_338228_1516" visibility="public">
+    <classifier xsi:type="uml:Stereotype" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#magicdraw_1046861421236_39100_29"/>
+  </appliedStereotypeInstance>
+  <packagedElement xsi:type="uml:DataType" xmi:id="_9_0_1fe00f9_1119336925531_433788_5" ID="_9_0_1fe00f9_1119336925531_433788_5" name="DateTime" visibility="public"/>
+  <packagedElement xsi:type="uml:DataType" xmi:id="_9_0_1fe00f9_1119336925531_364079_66" ID="_9_0_1fe00f9_1119336925531_364079_66" name="String" visibility="public"/>
+</uml:Package>
+</filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='com.nomagic.magicdraw.core.project.options.commonprojectoptions' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'>
+<project.options:CommonProjectOptions xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:project.options="http://www.nomagic.com/ns/magicdraw/core/project/options/1.0" xmi:id="_BxwCYMuUEeGTNKcXcW2wuA" optionsString="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" modelElementStyleString="UEsDBBQACAAIALej9kAAAAAAAAAAAAAAAAAAAAAAdY5BC4IwGEDP+iu87VTWLWJTJOdJK3AGnWToZwy2KdsU/fdpQbdO7/LgPRzPSgYTGCt6TdBxf0AB6KZvhX4RVLFsd0Jx5Pv4bvoBjFsewgrXm6RpYFgZ+R5WLZWgQLsAvrxIbi1BpVCDhNItEtDqeVhzBVHJnjmti1tK85rmtKBXVqc0S6qclTj8KJvbQsdH6YJZifPE5QgEdVxaQOGWDH/NyMfhv7c3UEsHCKB+0BCoAAAA3QAAAFBLAQIUABQACAAIALej9kCgftAQqAAAAN0AAAAAAAAAAAAAAAAAAAAAAAAAAABQSwUGAAAAAAEAAQAuAAAA1gAAAAAA" symbolStylesString="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"/>
+</filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='personal-Binaries.properties' type='XML'>#
+#Sun Jul 22 20:29:47 GMT+05:30 2012
+</filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='proxy.local__PROJECT$heb671d3de8f97fbe3debfae57467f09c_resource_com$dnomagic$dmagicdraw$duml_umodel$dshared_umodel$dsnapshot' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.nomagic.com/magicdraw/UML/2.4.1">
+  <uml:Profile xmi:id="_8a70287_1078771814628_224704_589" ID="_8a70287_1078771814628_224704_589" name="andromda-common" visibility="public">
+    <appliedStereotypeInstance xmi:id="_17_0_1_2e90116_1302122486060_350437_2536" ID="_17_0_1_2e90116_1302122486060_350437_2536" visibility="public">
+      <classifier xsi:type="uml:Stereotype" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#magicdraw_1046861421236_39100_29"/>
+    </appliedStereotypeInstance>
+    <packagedElement xsi:type="uml:Stereotype" xmi:id="_9_0_1fe00f9_1119373197267_97120_6" ID="_9_0_1fe00f9_1119373197267_97120_6" name="Exception" visibility="public">
+      <ownedAttribute xmi:id="_11_5_e240333_1154527611687_441221_12" ID="_11_5_e240333_1154527611687_441221_12" name="base_Class" visibility="private">
+        <type xsi:type="uml:Class" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_62a020a_1105704885343_144138_7929"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_17_0_1_2e90116_1302564159457_293404_4211" ID="_17_0_1_2e90116_1302564159457_293404_4211" name="andromda_serialVersionUID" visibility="private">
+        <type xsi:type="uml:PrimitiveType" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_2_91a0295_1110274713995_297054_0"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Stereotype" xmi:id="_9_0_1fe00f9_1119373197267_59537_10" ID="_9_0_1fe00f9_1119373197267_59537_10" name="ValueObject" visibility="public">
+      <ownedAttribute xmi:id="_11_5_e240333_1154527611703_499212_17" ID="_11_5_e240333_1154527611703_499212_17" name="base_Class" visibility="private">
+        <type xsi:type="uml:Class" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_62a020a_1105704885343_144138_7929"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_17_0_1_2e90116_1302564208288_944717_4215" ID="_17_0_1_2e90116_1302564208288_944717_4215" name="andromda_xml_bindingAnnotations" visibility="private">
+        <type xsi:type="uml:PrimitiveType" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_12_0EAPbeta_be00301_1157529792739_987548_11"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_17_0_1_2e90116_1302564208288_19770_4216" ID="_17_0_1_2e90116_1302564208288_19770_4216" name="andromda_xml_attributes" visibility="private">
+        <type xsi:type="uml:PrimitiveType" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_12_0EAPbeta_be00301_1157529792739_987548_11"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_17_0_1_2e90116_1302564208288_12489_4217" ID="_17_0_1_2e90116_1302564208288_12489_4217" name="andromda_serialVersionUID" visibility="private">
+        <type xsi:type="uml:PrimitiveType" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_2_91a0295_1110274713995_297054_0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_17_0_1_2e90116_1302564208288_113831_4218" ID="_17_0_1_2e90116_1302564208288_113831_4218" name="andromda_generateEqualPropertiesMethod" visibility="private">
+        <type xsi:type="uml:PrimitiveType" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_12_0EAPbeta_be00301_1157529792739_987548_11"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Stereotype" xmi:id="_9_0_1fe00f9_1119373197267_116094_8" ID="_9_0_1fe00f9_1119373197267_116094_8" name="ApplicationException" visibility="public">
+      <generalization xmi:id="_9_0_1fe00f9_1119373197267_348563_7" ID="_9_0_1fe00f9_1119373197267_348563_7" general="_9_0_1fe00f9_1119373197267_97120_6"/>
+      <ownedAttribute xmi:id="_11_5_e240333_1154527611703_294465_47" ID="_11_5_e240333_1154527611703_294465_47" name="base_Class" visibility="private">
+        <type xsi:type="uml:Class" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_62a020a_1105704885343_144138_7929"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_17_0_1_2e90116_1302564124909_642760_4203" ID="_17_0_1_2e90116_1302564124909_642760_4203" name="andromda_serialVersionUID" visibility="private">
+        <type xsi:type="uml:PrimitiveType" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_2_91a0295_1110274713995_297054_0"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Extension" xmi:id="_11_5_e240333_1154527611703_608229_46" ID="_11_5_e240333_1154527611703_608229_46" visibility="public" memberEnd="_11_5_e240333_1154527611703_294465_47 _11_5_e240333_1154527611703_671408_48">
+      <ownedEnd xsi:type="uml:ExtensionEnd" xmi:id="_11_5_e240333_1154527611703_671408_48" ID="_11_5_e240333_1154527611703_671408_48" name="extension_ApplicationException" visibility="private" type="_9_0_1fe00f9_1119373197267_116094_8" aggregation="composite"/>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Extension" xmi:id="_11_5_e240333_1154527611703_971942_16" ID="_11_5_e240333_1154527611703_971942_16" visibility="public" memberEnd="_11_5_e240333_1154527611703_499212_17 _11_5_e240333_1154527611703_687049_18">
+      <ownedEnd xsi:type="uml:ExtensionEnd" xmi:id="_11_5_e240333_1154527611703_687049_18" ID="_11_5_e240333_1154527611703_687049_18" name="extension_ValueObject" visibility="private" type="_9_0_1fe00f9_1119373197267_59537_10" aggregation="composite"/>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Extension" xmi:id="_11_5_e240333_1154527611687_952074_11" ID="_11_5_e240333_1154527611687_952074_11" visibility="public" memberEnd="_11_5_e240333_1154527611687_441221_12 _11_5_e240333_1154527611687_320217_13">
+      <ownedEnd xsi:type="uml:ExtensionEnd" xmi:id="_11_5_e240333_1154527611687_320217_13" ID="_11_5_e240333_1154527611687_320217_13" name="extension_Exception" visibility="private" type="_9_0_1fe00f9_1119373197267_97120_6" aggregation="composite"/>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Stereotype" xmi:id="_9_0_1fe00f9_1119373197267_700962_14" ID="_9_0_1fe00f9_1119373197267_700962_14" name="Enumeration" visibility="public">
+      <ownedAttribute xmi:id="_11_5_e240333_1154527611703_925389_32" ID="_11_5_e240333_1154527611703_925389_32" name="base_Class" visibility="private">
+        <type xsi:type="uml:Class" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_62a020a_1105704885343_144138_7929"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_17_0_1_2e90116_1302564142097_9643_4207" ID="_17_0_1_2e90116_1302564142097_9643_4207" name="andromda_serialVersionUID" visibility="private">
+        <type xsi:type="uml:PrimitiveType" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_2_91a0295_1110274713995_297054_0"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Extension" xmi:id="_11_5_e240333_1154527611703_177278_31" ID="_11_5_e240333_1154527611703_177278_31" visibility="public" memberEnd="_11_5_e240333_1154527611703_925389_32 _11_5_e240333_1154527611703_297649_33">
+      <ownedEnd xsi:type="uml:ExtensionEnd" xmi:id="_11_5_e240333_1154527611703_297649_33" ID="_11_5_e240333_1154527611703_297649_33" name="extension_Enumeration" visibility="private" type="_9_0_1fe00f9_1119373197267_700962_14" aggregation="composite"/>
+    </packagedElement>
+  </uml:Profile>
+  <uml:Package xmi:id="_17_0_1_2e90116_1302564025198_877618_2632" ID="_17_0_1_2e90116_1302564025198_877618_2632" name="org.andromda.profile" visibility="public"/>
+</xmi:XMI>
+</filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='proxy.local__PROJECT$h7998b4d19d525624bbab84e6e16d987_resource_com$dnomagic$dci$dmetamodel$dproject$dsnapshot' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'><project:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:project="http://www.nomagic.com/ns/cameo/client/project/1.0" xmi:id="PROJECT-83c392c7a0f05076e71989bd67a38823" description="" id="PROJECT-83c392c7a0f05076e71989bd67a38823">	<ownedSections xmi:id="_Z0RnQMuUEeGTNKcXcW2wuA" name="shared_model" shared="true" featuredBy="_Z0RAMMuUEeGTNKcXcW2wuA">		<sharePoints xmi:id="_Z3xnMMuUEeGTNKcXcW2wuA" ID="_9_0_2_12ab03bf_1120852932765_76536_0">			<object href="PROJECT-7998b4d19d525624bbab84e6e16d987?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_2_12ab03bf_1120852932765_76536_0"></object>			<options xmi:id="_Z3xnMcuUEeGTNKcXcW2wuA" key="preferredPath" value=""></options></sharePoints></ownedSections>	<ownedSections xmi:id="_Z3O0oMuUEeGTNKcXcW2wuA" name="commonprojectoptions" shared="true" featuredBy="_Z3ONkMuUEeGTNKcXcW2wuA"></ownedSections>	<ownedSections xmi:id="_Z3PbssuUEeGTNKcXcW2wuA" name="personalprojectoptions" shared="true" belongsTo="_Z3PbscuUEeGTNKcXcW2wuA" featuredBy="_Z3ONkMuUEeGTNKcXcW2wuA"></ownedSections>	<userParts xmi:id="_Z3PbscuUEeGTNKcXcW2wuA" user="_Z3PbsMuUEeGTNKcXcW2wuA" sections="_Z3PbssuUEeGTNKcXcW2wuA"></userParts>	<features xmi:id="_Z0RAMMuUEeGTNKcXcW2wuA" name="UML Model" namespace="com.nomagic.magicdraw.uml_model" version="17.0" sections="_Z0RnQMuUEeGTNKcXcW2wuA" internalVersion="1"></features>	<features xmi:id="_Z3ONkMuUEeGTNKcXcW2wuA" name="Project Options" namespace="com.nomagic.magicdraw.core.project.options" version="1.0" sections="_Z3O0oMuUEeGTNKcXcW2wuA _Z3PbssuUEeGTNKcXcW2wuA" internalVersion="1"></features>	<features xmi:id="_Z4EiIMuUEeGTNKcXcW2wuA" name="Language Properties" namespace="com.nomagic.magicdraw.ce.languageproperties" version="1.0" internalVersion="1"></features>	<features xmi:id="_Z4FJMMuUEeGTNKcXcW2wuA" name="Code Engineering" namespace="com.nomagic.magicdraw.ce" version="1.0" internalVersion="1"></features>	<properties xmi:id="_Z3y1UMuUEeGTNKcXcW2wuA" key="standardProfile" value="false"></properties>	<properties xmi:id="_Z3y1UcuUEeGTNKcXcW2wuA" key="internalVersion" value="-1"></properties>	<projectUsers xmi:id="_Z3PbsMuUEeGTNKcXcW2wuA" userId="default"></projectUsers></project:Project></filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='proxy.local__PROJECT$h3aa503d7b65c1a6d251ae1e6ab827e8_resource_com$dnomagic$dmagicdraw$duml_umodel$dshared_umodel$dsnapshot' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'>
+<uml:Profile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.nomagic.com/magicdraw/UML/2.4.1" xmi:id="_11_5_e240333_1154527578125_463523_83" ID="_11_5_e240333_1154527578125_463523_83" name="andromda-process" visibility="public">
+  <appliedStereotypeInstance xmi:id="_17_0_1_2e90116_1302124530149_306510_1609" ID="_17_0_1_2e90116_1302124530149_306510_1609" visibility="public">
+    <classifier xsi:type="uml:Stereotype" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#magicdraw_1046861421236_39100_29"/>
+  </appliedStereotypeInstance>
+</uml:Profile>
+</filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='com.nomagic.ci.persistence.local.proxy.privatedependencylist' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'>
+<snapshot:PrivateDependenciesContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:snapshot="http://www.nomagic.com/ns/cameo/client/snapshot/1.0" xmi:id="_tyNVUMuUEeGTNKcXcW2wuA">
+  <referencedResources xmi:id="_4UDP0NQNEeGR2rFSkF7vbQ" originalResourceURI="local:/PROJECT-eb671d3de8f97fbe3debfae57467f09c?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <referencedObjects>_9_0_1fe00f9_1119373197267_59537_10</referencedObjects>
+    <referencedObjects>_9_0_1fe00f9_1119373197267_116094_8</referencedObjects>
+    <referencedObjects>_9_0_1fe00f9_1119373197267_700962_14</referencedObjects>
+    <referencedObjects>_17_0_1_2e90116_1302564025198_877618_2632</referencedObjects>
+    <referencedObjects>_8a70287_1078771814628_224704_589</referencedObjects>
+  </referencedResources>
+  <referencedResources xmi:id="_4UDP0dQNEeGR2rFSkF7vbQ" originalResourceURI="local:/PROJECT-f628ae1c9d151ec3bd65a246eb4179?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <referencedObjects>_9_5_1_2e90116_1229363944185_345791_1</referencedObjects>
+    <referencedObjects>_9_0_2_12ab03bf_1120852471296_986007_0</referencedObjects>
+  </referencedResources>
+  <referencedResources xmi:id="_4UDP0tQNEeGR2rFSkF7vbQ" originalResourceURI="local:/PROJECT-a3842087847353943a903d36733d6b2?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <referencedObjects>_12_0_12ab03bf_1166898799812_358986_99</referencedObjects>
+  </referencedResources>
+  <referencedResources xmi:id="_4UDP09QNEeGR2rFSkF7vbQ" originalResourceURI="local:/PROJECT-3aa503d7b65c1a6d251ae1e6ab827e8?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <referencedObjects>_11_5_e240333_1154527578125_463523_83</referencedObjects>
+  </referencedResources>
+  <referencedResources xmi:id="_4UDP1NQNEeGR2rFSkF7vbQ" originalResourceURI="local:/PROJECT-7998b4d19d525624bbab84e6e16d987?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <referencedObjects>_9_0_2_12ab03bf_1120852932765_76536_0</referencedObjects>
+    <referencedObjects>_9_5_1_2e90116_1229364633835_405645_0</referencedObjects>
+    <referencedObjects>_9_0_1fe00f9_1119337599234_292426_17</referencedObjects>
+  </referencedResources>
+  <referencedResources xmi:id="_4UDP1dQNEeGR2rFSkF7vbQ" originalResourceURI="local:/PROJECT-c4761dfa50bf72fb60693efc8193242?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <referencedObjects>_11_5_e240333_1154527378140_885914_432</referencedObjects>
+  </referencedResources>
+  <referencedResources xmi:id="_4UDP1tQNEeGR2rFSkF7vbQ" originalResourceURI="local:/PROJECT-dc758356b32e81d9bc4383928d624a86?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <referencedObjects>_11_5_e240333_1154527253281_154549_26</referencedObjects>
+  </referencedResources>
+  <referencedResources xmi:id="_4UDP19QNEeGR2rFSkF7vbQ" originalResourceURI="local:/PROJECT-f392a83d7e259d5a6875099f8235cf5?resource=com.nomagic.magicdraw.uml_umodel.model">
+    <referencedObjects>eee_1045467100313_135436_1</referencedObjects>
+  </referencedResources>
+  <referencedResources xmi:id="_4UD24NQNEeGR2rFSkF7vbQ" originalResourceURI="local:/PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <referencedObjects>_be00301_1077726770128_871366_1</referencedObjects>
+    <referencedObjects>_9_0_be00301_1108044380615_150487_0</referencedObjects>
+    <referencedObjects>_be00301_1073394345322_922552_1</referencedObjects>
+    <referencedObjects>magicdraw_uml_standard_profile_v_0001</referencedObjects>
+    <referencedObjects>_be00301_1073306188629_537791_2</referencedObjects>
+    <referencedObjects>magicdraw_1046861421236_39100_29</referencedObjects>
+    <referencedObjects>_16_8beta_8ca0285_1257244649124_794756_344</referencedObjects>
+  </referencedResources>
+  <referencedResources xmi:id="_4UD24dQNEeGR2rFSkF7vbQ" originalResourceURI="local:/PROJECT-22a38c78e483726a0feff728cec1044?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <referencedObjects>_9_0_1fe00f9_1119336925531_364079_66</referencedObjects>
+    <referencedObjects>_9_0_1fe00f9_1119336925531_433788_5</referencedObjects>
+    <referencedObjects>_9_0_1fe00f9_1119336925546_238419_77</referencedObjects>
+  </referencedResources>
+  <referencedResources xmi:id="_4UD24tQNEeGR2rFSkF7vbQ" originalResourceURI="local:/PROJECT-5e80cdd08691456640d6403ea4f03a?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <referencedObjects>_11_5_e240333_1154527540265_181005_899</referencedObjects>
+  </referencedResources>
+  <referencedResources xmi:id="_4UD249QNEeGR2rFSkF7vbQ" originalResourceURI="local:/PROJECT-2053c9b3db4d83fbeff3426811af17a6?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <referencedObjects>_11_5_e240333_1154527425687_111873_349</referencedObjects>
+  </referencedResources>
+</snapshot:PrivateDependenciesContainer>
+</filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='proxy.local__PROJECT$h3aa503d7b65c1a6d251ae1e6ab827e8_resource_com$dnomagic$dci$dmetamodel$dproject$dsnapshot' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'><project:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:project="http://www.nomagic.com/ns/cameo/client/project/1.0" xmi:id="PROJECT-bdc8ca4aa7bcc2c9a759c1375daf69" description="" id="PROJECT-bdc8ca4aa7bcc2c9a759c1375daf69">	<ownedSections xmi:id="_lopNMMuUEeGTNKcXcW2wuA" name="shared_model" shared="true" featuredBy="_loomIMuUEeGTNKcXcW2wuA">		<sharePoints xmi:id="_lqkf0MuUEeGTNKcXcW2wuA" ID="_11_5_e240333_1154527578125_463523_83">			<object href="PROJECT-3aa503d7b65c1a6d251ae1e6ab827e8?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_11_5_e240333_1154527578125_463523_83"></object>			<options xmi:id="_lqkf0cuUEeGTNKcXcW2wuA" key="preferredPath" value="org.andromda.profile"></options></sharePoints></ownedSections>	<ownedSections xmi:id="_lp0R4cuUEeGTNKcXcW2wuA" name="commonprojectoptions" shared="true" featuredBy="_lp0R4MuUEeGTNKcXcW2wuA"></ownedSections>	<ownedSections xmi:id="_lp0488uUEeGTNKcXcW2wuA" name="personalprojectoptions" shared="true" belongsTo="_lp048suUEeGTNKcXcW2wuA" featuredBy="_lp0R4MuUEeGTNKcXcW2wuA"></ownedSections>	<userParts xmi:id="_lp048suUEeGTNKcXcW2wuA" user="_lp048cuUEeGTNKcXcW2wuA" sections="_lp0488uUEeGTNKcXcW2wuA"></userParts>	<features xmi:id="_loomIMuUEeGTNKcXcW2wuA" name="UML Model" namespace="com.nomagic.magicdraw.uml_model" version="17.0" sections="_lopNMMuUEeGTNKcXcW2wuA" internalVersion="1"></features>	<features xmi:id="_lp0R4MuUEeGTNKcXcW2wuA" name="Project Options" namespace="com.nomagic.magicdraw.core.project.options" version="1.0" sections="_lp0R4cuUEeGTNKcXcW2wuA _lp0488uUEeGTNKcXcW2wuA" internalVersion="1"></features>	<features xmi:id="_lrDoAMuUEeGTNKcXcW2wuA" name="Language Properties" namespace="com.nomagic.magicdraw.ce.languageproperties" version="1.0" internalVersion="1"></features>	<features xmi:id="_lrEPEMuUEeGTNKcXcW2wuA" name="Code Engineering" namespace="com.nomagic.magicdraw.ce" version="1.0" internalVersion="1"></features>	<properties xmi:id="_lqm8EMuUEeGTNKcXcW2wuA" key="standardProfile" value="false"></properties>	<properties xmi:id="_lqm8EcuUEeGTNKcXcW2wuA" key="internalVersion" value="-1"></properties>	<projectUsers xmi:id="_lp048cuUEeGTNKcXcW2wuA" userId="default"></projectUsers></project:Project></filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='proxy.local__PROJECT$heb671d3de8f97fbe3debfae57467f09c_resource_com$dnomagic$dci$dmetamodel$dproject$dsnapshot' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'><project:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:project="http://www.nomagic.com/ns/cameo/client/project/1.0" xmi:id="PROJECT-aa8ccd72b8b947b8764215ce898d2b" description="" id="PROJECT-aa8ccd72b8b947b8764215ce898d2b">	<ownedSections xmi:id="_CZFIIcuUEeGTNKcXcW2wuA" name="shared_model" shared="true" featuredBy="_CZFIIMuUEeGTNKcXcW2wuA">		<sharePoints xmi:id="_CfcO0MuUEeGTNKcXcW2wuA" ID="_17_0_1_2e90116_1302564025198_877618_2632">			<object href="PROJECT-eb671d3de8f97fbe3debfae57467f09c?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_17_0_1_2e90116_1302564025198_877618_2632"></object>			<options xmi:id="_CfcO0cuUEeGTNKcXcW2wuA" key="preferredPath" value=""></options></sharePoints>		<sharePoints xmi:id="_CfcO0suUEeGTNKcXcW2wuA" ID="_8a70287_1078771814628_224704_589">			<object href="PROJECT-eb671d3de8f97fbe3debfae57467f09c?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_8a70287_1078771814628_224704_589"></object>			<options xmi:id="_CfcO08uUEeGTNKcXcW2wuA" key="preferredPath" value=""></options></sharePoints></ownedSections>	<ownedSections xmi:id="_Cesn8MuUEeGTNKcXcW2wuA" name="commonprojectoptions" shared="true" featuredBy="_CesA4MuUEeGTNKcXcW2wuA"></ownedSections>	<ownedSections xmi:id="_CetPAsuUEeGTNKcXcW2wuA" name="personalprojectoptions" shared="true" belongsTo="_CetPAcuUEeGTNKcXcW2wuA" featuredBy="_CesA4MuUEeGTNKcXcW2wuA"></ownedSections>	<userParts xmi:id="_CetPAcuUEeGTNKcXcW2wuA" user="_CetPAMuUEeGTNKcXcW2wuA" sections="_CetPAsuUEeGTNKcXcW2wuA"></userParts>	<features xmi:id="_CZFIIMuUEeGTNKcXcW2wuA" name="UML Model" namespace="com.nomagic.magicdraw.uml_model" version="17.0" sections="_CZFIIcuUEeGTNKcXcW2wuA" internalVersion="1"></features>	<features xmi:id="_CesA4MuUEeGTNKcXcW2wuA" name="Project Options" namespace="com.nomagic.magicdraw.core.project.options" version="1.0" sections="_Cesn8MuUEeGTNKcXcW2wuA _CetPAsuUEeGTNKcXcW2wuA" internalVersion="1"></features>	<features xmi:id="_CfocEMuUEeGTNKcXcW2wuA" name="Language Properties" namespace="com.nomagic.magicdraw.ce.languageproperties" version="1.0" internalVersion="1"></features>	<features xmi:id="_CfocEcuUEeGTNKcXcW2wuA" name="Code Engineering" namespace="com.nomagic.magicdraw.ce" version="1.0" internalVersion="1"></features>	<properties xmi:id="_Cfc15suUEeGTNKcXcW2wuA" key="standardProfile" value="false"></properties>	<properties xmi:id="_Cfc158uUEeGTNKcXcW2wuA" key="internalVersion" value="-1"></properties>	<projectUsers xmi:id="_CetPAMuUEeGTNKcXcW2wuA" userId="default"></projectUsers></project:Project></filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='proxy.local__PROJECT$hf392a83d7e259d5a6875099f8235cf5_resource_com$dnomagic$dmagicdraw$duml_umodel$dmodel$dsnapshot' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.nomagic.com/magicdraw/UML/2.4.1" xmi:id="eee_1045467100313_135436_1" ID="eee_1045467100313_135436_1" name="AndroMDAModel" visibility="public">
+  <appliedStereotypeInstance xmi:id="_16_0_1_2e90116_1245798622829_669470_242" ID="_16_0_1_2e90116_1245798622829_669470_242" visibility="public">
+    <classifier xsi:type="uml:Stereotype" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#magicdraw_1046861421236_39100_29"/>
+  </appliedStereotypeInstance>
+</uml:Model>
+</filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='proxy.local__PROJECT$hdc758356b32e81d9bc4383928d624a86_resource_com$dnomagic$dmagicdraw$duml_umodel$dshared_umodel$dsnapshot' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'>
+<uml:Profile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.nomagic.com/magicdraw/UML/2.4.1" xmi:id="_11_5_e240333_1154527253281_154549_26" ID="_11_5_e240333_1154527253281_154549_26" name="andromda-meta" visibility="public">
+  <appliedStereotypeInstance xmi:id="_17_0_1_2e90116_1302124455395_655857_1516" ID="_17_0_1_2e90116_1302124455395_655857_1516" visibility="public">
+    <classifier xsi:type="uml:Stereotype" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#magicdraw_1046861421236_39100_29"/>
+  </appliedStereotypeInstance>
+</uml:Profile>
+</filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='proxy.local__PROJECT$ha3842087847353943a903d36733d6b2_resource_com$dnomagic$dmagicdraw$duml_umodel$dshared_umodel$dsnapshot' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'>
+<uml:Profile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.nomagic.com/magicdraw/UML/2.4.1" xmi:id="_12_0_12ab03bf_1166898799812_358986_99" ID="_12_0_12ab03bf_1166898799812_358986_99" name="andromda-messaging" visibility="public">
+  <appliedStereotypeInstance xmi:id="_17_0_1_2e90116_1302124430409_277981_1516" ID="_17_0_1_2e90116_1302124430409_277981_1516" visibility="public">
+    <classifier xsi:type="uml:Stereotype" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#magicdraw_1046861421236_39100_29"/>
+  </appliedStereotypeInstance>
+</uml:Profile>
+</filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='proxy.local__PROJECT$h877558e9224f114d50dea1f39a1c119_resource_com$dnomagic$dci$dmetamodel$dproject$dsnapshot' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'>
+<project:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:project="http://www.nomagic.com/ns/cameo/client/project/1.0" xmi:id="_VWTUgU_TEeCNOP_jel_PNg" description="" id="PROJECT-877558e9224f114d50dea1f39a1c119">
+  <ownedSections xmi:id="_VWY0EU_TEeCNOP_jel_PNg" name="model" featuredBy="_VWY0EE_TEeCNOP_jel_PNg"/>
+  <ownedSections xmi:id="_VabmkU_TEeCNOP_jel_PNg" name="commonprojectoptions" shared="true" featuredBy="_VabmkE_TEeCNOP_jel_PNg"/>
+  <ownedSections xmi:id="_VacNoU_TEeCNOP_jel_PNg" name="personalprojectoptions" shared="true" belongsTo="_VacNok_TEeCNOP_jel_PNg" featuredBy="_VabmkE_TEeCNOP_jel_PNg"/>
+  <ownedSections xmi:id="_VbQF8E_TEeCNOP_jel_PNg" name="shared_model" shared="true" featuredBy="_VWY0EE_TEeCNOP_jel_PNg">
+    <sharePoints xmi:id="_VbhywE_TEeCNOP_jel_PNg" ID="magicdraw_uml_standard_profile_v_0001">
+      <object href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#magicdraw_uml_standard_profile_v_0001"/>
+      <options xmi:id="_Bnb0gH02EeCAfIowCLYtPA" key="preferredPath" value=""/>
+    </sharePoints>
+  </ownedSections>
+  <ownedSections xmi:id="_VfpdwU_TEeCNOP_jel_PNg" name="commoncodeengineering" featuredBy="_VfpdwE_TEeCNOP_jel_PNg"/>
+  <userParts xmi:id="_VacNok_TEeCNOP_jel_PNg" user="_kpyFAVxdEeC_ZNJv4YLpoQ" sections="_VacNoU_TEeCNOP_jel_PNg"/>
+  <projectUsages xmi:id="_Vbk2EE_TEeCNOP_jel_PNg" usedProjectURI="file:/E:/No%20install/17.0.2/profiles/UML%20completeness%20constraints.mdzip" reshared="true" readonly="true" alternateLocation="file:/Users/minde/md/md/core/profiles/UML%20completeness%20constraints.mdzip" preferredProjectRepositoryType="" loadedAutomatically="true">
+    <usedProject href="PROJECT-38e322bfe6abfc5fa7bfd541d41ea7?resource=com.nomagic.ci.metamodel.project#_j78IMU_TEeCNOP_jel_PNg"/>
+    <mountPoints xmi:id="_VbrjwE_TEeCNOP_jel_PNg" sharePointID="_12_0_8f90291_1163453727562_955061_538" containmentFeatureID="59" featureName="UML Model" containmentIndex="-1" containmentFeatureName="packagedElement">
+      <mountedPoint href="PROJECT-38e322bfe6abfc5fa7bfd541d41ea7?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_12_0_8f90291_1163453727562_955061_538"/>
+      <mountedOn href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_11_5_f720368_1159529670215_231387_1"/>
+      <options xmi:id="_r6YAwFnLEeCNG86yLj6xYg" key="preferredPath" value="UML Standard Profile::Validation Profile"/>
+    </mountPoints>
+    <properties xmi:id="_Vbrjwk_TEeCNOP_jel_PNg" key="autoLoadKind"/>
+    <properties xmi:id="_Vbrjw0_TEeCNOP_jel_PNg" key="usedVersion" value="17.0.2"/>
+    <properties xmi:id="_e4SoIE_TEeCNOP_jel_PNg" key="LOCAL_PROJECT_ID" value="PROJECT-38e322bfe6abfc5fa7bfd541d41ea7"/>
+  </projectUsages>
+  <projectUsages xmi:id="_VbuAAE_TEeCNOP_jel_PNg" usedProjectURI="file:/E:/No%20install/17.0.2/profiles/UML%20correctness%20constraints.mdzip" reshared="true" readonly="true" alternateLocation="file:/Users/minde/md/md/core/profiles/UML%20correctness%20constraints.mdzip" preferredProjectRepositoryType="" loadedAutomatically="true">
+    <usedProject href="PROJECT-b22019f0d0c8fd31d4e5d5e3781df1ad?resource=com.nomagic.ci.metamodel.project#_m_6PgU_TEeCNOP_jel_PNg"/>
+    <mountPoints xmi:id="_Vb0GpU_TEeCNOP_jel_PNg" sharePointID="_12_0_8f90291_1163446670265_941740_378" containmentFeatureID="59" featureName="UML Model" containmentIndex="-1" containmentFeatureName="packagedElement">
+      <mountedPoint href="PROJECT-b22019f0d0c8fd31d4e5d5e3781df1ad?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_12_0_8f90291_1163446670265_941740_378"/>
+      <mountedOn href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_11_5_f720368_1159529670215_231387_1"/>
+      <options xmi:id="_p_focFnLEeCNG86yLj6xYg" key="preferredPath" value="UML Standard Profile::Validation Profile"/>
+    </mountPoints>
+    <properties xmi:id="_Vb0tsE_TEeCNOP_jel_PNg" key="autoLoadKind"/>
+    <properties xmi:id="_Vb0tsU_TEeCNOP_jel_PNg" key="usedVersion" value="17.0.2"/>
+    <properties xmi:id="_e4SoIk_TEeCNOP_jel_PNg" key="LOCAL_PROJECT_ID" value="PROJECT-b22019f0d0c8fd31d4e5d5e3781df1ad"/>
+  </projectUsages>
+  <projectUsages xmi:id="_Vb3J8E_TEeCNOP_jel_PNg" usedProjectURI="file:/E:/No%20install/17.0.2/profiles/Traceability%20Customization.mdzip" reshared="true" readonly="true" alternateLocation="file:/Users/minde/md/md/core/profiles/Traceability%20Customization.mdzip" preferredProjectRepositoryType="" loadedAutomatically="true">
+    <usedProject href="PROJECT-13a6649c8984aaf82df7aa5511335753?resource=com.nomagic.ci.metamodel.project#_j4C4gVoMEeCgoqXAD1kEmg"/>
+    <mountPoints xmi:id="_VeKQAE_TEeCNOP_jel_PNg" sharePointID="_16_6_8f90291_1254846042821_86742_517" containmentFeatureID="59" featureName="UML Model" containmentIndex="-1" containmentFeatureName="packagedElement">
+      <mountedPoint href="PROJECT-13a6649c8984aaf82df7aa5511335753?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_16_6_8f90291_1254846042821_86742_517"/>
+      <mountedOn href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_be00301_1073394351331_445580_2"/>
+      <options xmi:id="_VeKQAU_TEeCNOP_jel_PNg" key="preferredPath" value="UML Standard Profile::MagicDraw Profile::"/>
+    </mountPoints>
+    <properties xmi:id="_VeKQAk_TEeCNOP_jel_PNg" key="usedVersion" value="17.0.2"/>
+    <properties xmi:id="_e4SoIU_TEeCNOP_jel_PNg" key="LOCAL_PROJECT_ID" value="PROJECT-13a6649c8984aaf82df7aa5511335753"/>
+  </projectUsages>
+  <features xmi:id="_VWY0EE_TEeCNOP_jel_PNg" name="UML Model" namespace="com.nomagic.magicdraw.uml_model" version="17.0" sections="_VWY0EU_TEeCNOP_jel_PNg _VbQF8E_TEeCNOP_jel_PNg" internalVersion="1"/>
+  <features xmi:id="_VabmkE_TEeCNOP_jel_PNg" name="Project Options" namespace="com.nomagic.magicdraw.core.project.options" version="1.0" sections="_VabmkU_TEeCNOP_jel_PNg _VacNoU_TEeCNOP_jel_PNg" internalVersion="1"/>
+  <features xmi:id="_Vfo2sE_TEeCNOP_jel_PNg" name="Language Properties" namespace="com.nomagic.magicdraw.ce.languageproperties" version="1.0" internalVersion="1"/>
+  <features xmi:id="_VfpdwE_TEeCNOP_jel_PNg" name="Code Engineering" namespace="com.nomagic.magicdraw.ce" version="1.0" sections="_VfpdwU_TEeCNOP_jel_PNg" internalVersion="1"/>
+  <properties xmi:id="_Vbhywk_TEeCNOP_jel_PNg" key="standardProfile" value="true"/>
+  <properties xmi:id="_VbiZ0E_TEeCNOP_jel_PNg" key="internalVersion" value="17.0.2"/>
+  <properties xmi:id="_srSgUFnLEeCNG86yLj6xYg" key="MODULES_DIRS" value="&lt;install.root>\templates&lt;>&lt;install.root>\profiles&lt;>&lt;project.dir>\&lt;>&lt;install.root>\modelLibraries"/>
+  <properties xmi:id="_94jvAH01EeCAfIowCLYtPA" key="exporterDescription" value="ac ed 0 5 73 72 0 2e 63 6f 6d 2e 6e 6f 6d 61 67 69 63 2e 70 65 72 73 69 73 74 65 6e 63 65 2e 58 6d 69 45 78 70 6f 72 74 65 72 44 65 73 63 72 69 70 74 69 6f 6e f5 3e fd c8 e7 3c 3b d7 2 0 5 4c 0 5 6d 4e 61 6d 65 74 0 12 4c 6a 61 76 61 2f 6c 61 6e 67 2f 53 74 72 69 6e 67 3b 4c 0 12 6d 52 65 71 75 69 72 65 64 50 6c 75 67 69 6e 4d 61 70 74 0 f 4c 6a 61 76 61 2f 75 74 69 6c 2f 4d 61 70 3b 4c 0 12 6d 52 65 71 75 69 72 65 64 52 65 73 6f 75 72 63 65 73 74 0 10 4c 6a 61 76 61 2f 75 74 69 6c 2f 4c 69 73 74 3b 4c 0 10 6d 55 4d 4c 4e 61 6d 65 73 70 61 63 65 55 52 49 71 0 7e 0 1 4c 0 8 6d 56 65 72 73 69 6f 6e 71 0 7e 0 1 78 70 74 0 d 4d 61 67 69 63 44 72 61 77 20 55 4d 4c 73 72 0 11 6a 61 76 61 2e 75 74 69 6c 2e 48 61 73 68 4d 61 70 5 7 da c1 c3 16 60 d1 3 0 2 46 0 a 6c 6f 61 64 46 61 63 74 6f 72 49 0 9 74 68 72 65 73 68 6f 6c 64 78 70 3f 40 0 0 0 0 0 c 77 8 0 0 0 10 0 0 0 0 78 73 72 0 13 6a 61 76 61 2e 75 74 69 6c 2e 41 72 72 61 79 4c 69 73 74 78 81 d2 1d 99 c7 61 9d 3 0 1 49 0 4 73 69 7a 65 78 70 0 0 0 0 77 4 0 0 0 0 78 70 74 0 6 31 37 2e 30 2e 32 "/>
+  <properties xmi:id="_DnjcsMQEEeCVy5mnlxX55w" key="fileVersion" value="71"/>
+  <properties xmi:id="_Doc0kMQEEeCVy5mnlxX55w" key="MODEL_ROOT_HREF" value="local:/PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.model#eee_1045467100313_135436_1"/>
+  <projectUsers xmi:id="_kpyFAVxdEeC_ZNJv4YLpoQ" userId="default"/>
+</project:Project>
+</filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='proxy.local__PROJECT$h22a38c78e483726a0feff728cec1044_resource_com$dnomagic$dci$dmetamodel$dproject$dsnapshot' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'><project:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:project="http://www.nomagic.com/ns/cameo/client/project/1.0" xmi:id="PROJECT-defe54cd57ed5746673a6317d366dd" description="" id="PROJECT-defe54cd57ed5746673a6317d366dd">	<ownedSections xmi:id="_CgkQMcuUEeGTNKcXcW2wuA" name="shared_model" shared="true" featuredBy="_CgkQMMuUEeGTNKcXcW2wuA">		<sharePoints xmi:id="_ClyucMuUEeGTNKcXcW2wuA" ID="_9_0_1fe00f9_1119336925546_238419_77">			<object href="PROJECT-22a38c78e483726a0feff728cec1044?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_9_0_1fe00f9_1119336925546_238419_77"></object>			<options xmi:id="_ClyuccuUEeGTNKcXcW2wuA" key="preferredPath" value=""></options></sharePoints></ownedSections>	<ownedSections xmi:id="_Ckpe8cuUEeGTNKcXcW2wuA" name="commonprojectoptions" shared="true" featuredBy="_Ckpe8MuUEeGTNKcXcW2wuA"></ownedSections>	<ownedSections xmi:id="_CkqGAsuUEeGTNKcXcW2wuA" name="personalprojectoptions" shared="true" belongsTo="_CkqGAcuUEeGTNKcXcW2wuA" featuredBy="_Ckpe8MuUEeGTNKcXcW2wuA"></ownedSections>	<userParts xmi:id="_CkqGAcuUEeGTNKcXcW2wuA" user="_CkqGAMuUEeGTNKcXcW2wuA" sections="_CkqGAsuUEeGTNKcXcW2wuA"></userParts>	<features xmi:id="_CgkQMMuUEeGTNKcXcW2wuA" name="UML Model" namespace="com.nomagic.magicdraw.uml_model" version="17.0" sections="_CgkQMcuUEeGTNKcXcW2wuA" internalVersion="1"></features>	<features xmi:id="_Ckpe8MuUEeGTNKcXcW2wuA" name="Project Options" namespace="com.nomagic.magicdraw.core.project.options" version="1.0" sections="_Ckpe8cuUEeGTNKcXcW2wuA _CkqGAsuUEeGTNKcXcW2wuA" internalVersion="1"></features>	<features xmi:id="_Cp2IAMuUEeGTNKcXcW2wuA" name="Language Properties" namespace="com.nomagic.magicdraw.ce.languageproperties" version="1.0" internalVersion="1"></features>	<features xmi:id="_Cp2vEMuUEeGTNKcXcW2wuA" name="Code Engineering" namespace="com.nomagic.magicdraw.ce" version="1.0" internalVersion="1"></features>	<properties xmi:id="_ClzVgMuUEeGTNKcXcW2wuA" key="standardProfile" value="false"></properties>	<properties xmi:id="_ClzVgcuUEeGTNKcXcW2wuA" key="internalVersion" value="-1"></properties>	<projectUsers xmi:id="_CkqGAMuUEeGTNKcXcW2wuA" userId="default"></projectUsers></project:Project></filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='proxy.local__PROJECT$h2053c9b3db4d83fbeff3426811af17a6_resource_com$dnomagic$dci$dmetamodel$dproject$dsnapshot' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'><project:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:project="http://www.nomagic.com/ns/cameo/client/project/1.0" xmi:id="PROJECT-531ee47a1164e071f11cf8bc713e49" description="" id="PROJECT-531ee47a1164e071f11cf8bc713e49">	<ownedSections xmi:id="_XTMKkcuUEeGTNKcXcW2wuA" name="shared_model" shared="true" featuredBy="_XTMKkMuUEeGTNKcXcW2wuA">		<sharePoints xmi:id="_XV_m8MuUEeGTNKcXcW2wuA" ID="_11_5_e240333_1154527425687_111873_349">			<object href="PROJECT-2053c9b3db4d83fbeff3426811af17a6?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_11_5_e240333_1154527425687_111873_349"></object>			<options xmi:id="_XV_m8cuUEeGTNKcXcW2wuA" key="preferredPath" value="org.andromda.profile"></options></sharePoints></ownedSections>	<ownedSections xmi:id="_XVXU0cuUEeGTNKcXcW2wuA" name="commonprojectoptions" shared="true" featuredBy="_XVXU0MuUEeGTNKcXcW2wuA"></ownedSections>	<ownedSections xmi:id="_XVX748uUEeGTNKcXcW2wuA" name="personalprojectoptions" shared="true" belongsTo="_XVX74suUEeGTNKcXcW2wuA" featuredBy="_XVXU0MuUEeGTNKcXcW2wuA"></ownedSections>	<userParts xmi:id="_XVX74suUEeGTNKcXcW2wuA" user="_XVX74cuUEeGTNKcXcW2wuA" sections="_XVX748uUEeGTNKcXcW2wuA"></userParts>	<features xmi:id="_XTMKkMuUEeGTNKcXcW2wuA" name="UML Model" namespace="com.nomagic.magicdraw.uml_model" version="17.0" sections="_XTMKkcuUEeGTNKcXcW2wuA" internalVersion="1"></features>	<features xmi:id="_XVXU0MuUEeGTNKcXcW2wuA" name="Project Options" namespace="com.nomagic.magicdraw.core.project.options" version="1.0" sections="_XVXU0cuUEeGTNKcXcW2wuA _XVX748uUEeGTNKcXcW2wuA" internalVersion="1"></features>	<features xmi:id="_XWPekMuUEeGTNKcXcW2wuA" name="Language Properties" namespace="com.nomagic.magicdraw.ce.languageproperties" version="1.0" internalVersion="1"></features>	<features xmi:id="_XWPekcuUEeGTNKcXcW2wuA" name="Code Engineering" namespace="com.nomagic.magicdraw.ce" version="1.0" internalVersion="1"></features>	<properties xmi:id="_XWA1EMuUEeGTNKcXcW2wuA" key="standardProfile" value="false"></properties>	<properties xmi:id="_XWA1EcuUEeGTNKcXcW2wuA" key="internalVersion" value="-1"></properties>	<projectUsers xmi:id="_XVX74cuUEeGTNKcXcW2wuA" userId="default"></projectUsers></project:Project></filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='proxy.local__PROJECT$h877558e9224f114d50dea1f39a1c119_resource_com$dnomagic$dmagicdraw$duml_umodel$dshared_umodel$dsnapshot' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'>
+<uml:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.nomagic.com/magicdraw/UML/2.4.1" xmi:id="magicdraw_uml_standard_profile_v_0001" ID="magicdraw_uml_standard_profile_v_0001" name="UML Standard Profile" visibility="public">
+  <appliedStereotypeInstance xmi:id="_12_1_8f90291_1174411598625_504587_98" ID="_12_1_8f90291_1174411598625_504587_98" visibility="public" classifier="_12_1_8f90291_1173963323875_662612_98"/>
+  <packagedElement xsi:type="uml:Profile" xmi:id="_be00301_1073394351331_445580_2" ID="_be00301_1073394351331_445580_2" name="MagicDraw Profile" visibility="public">
+    <packagedElement xsi:type="uml:Stereotype" xmi:id="_12_1_8f90291_1173963323875_662612_98" ID="_12_1_8f90291_1173963323875_662612_98" name="auxiliaryResource" visibility="public">
+      <generalization xmi:id="_15_0_8f90291_1196866634537_680603_98" ID="_15_0_8f90291_1196866634537_680603_98" general="_9_0_be00301_1108044721245_236588_411"/>
+      <ownedAttribute xmi:id="_12_1_8f90291_1173963939937_52316_99" ID="_12_1_8f90291_1173963939937_52316_99" name="base_Package" visibility="private" type="_9_0_62a020a_1105704885298_713292_7913"/>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Extension" xmi:id="_10_0EAPbeta_be00301_1123081772098_323897_274" ID="_10_0EAPbeta_be00301_1123081772098_323897_274" visibility="public" memberEnd="_10_0EAPbeta_be00301_1123081772108_624594_276 _10_0EAPbeta_be00301_1123081772098_411862_275">
+      <ownedEnd xsi:type="uml:ExtensionEnd" xmi:id="_10_0EAPbeta_be00301_1123081772108_624594_276" ID="_10_0EAPbeta_be00301_1123081772108_624594_276" name="extension_InvisibleStereotype" visibility="private" type="_9_0_be00301_1108044721245_236588_411" aggregation="composite"/>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Extension" xmi:id="_12_1_8f90291_1173963939937_323574_98" ID="_12_1_8f90291_1173963939937_323574_98" visibility="public" memberEnd="_12_1_8f90291_1173963939937_399630_100 _12_1_8f90291_1173963939937_52316_99">
+      <ownedEnd xsi:type="uml:ExtensionEnd" xmi:id="_12_1_8f90291_1173963939937_399630_100" ID="_12_1_8f90291_1173963939937_399630_100" name="extension_auxiliaryResource" visibility="private" type="_12_1_8f90291_1173963323875_662612_98" aggregation="composite"/>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Stereotype" xmi:id="_9_0_be00301_1108044721245_236588_411" ID="_9_0_be00301_1108044721245_236588_411" name="InvisibleStereotype" visibility="public">
+      <ownedAttribute xmi:id="_10_0EAPbeta_be00301_1123081772098_411862_275" ID="_10_0EAPbeta_be00301_1123081772098_411862_275" name="base_Element" visibility="private" type="_9_0_62a020a_1105704884807_371561_7741"/>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Stereotype" xmi:id="_9_0_be00301_1108044380615_150487_0" ID="_9_0_be00301_1108044380615_150487_0" name="DiagramInfo">
+      <generalization xmi:id="_9_0_be00301_1108044989070_469307_436" ID="_9_0_be00301_1108044989070_469307_436" general="_9_0_be00301_1108044721245_236588_411"/>
+      <ownedAttribute xmi:id="_be00301_1073306188629_537791_2" ID="_be00301_1073306188629_537791_2" name="Creation date" visibility="private" type="_be00301_1073305590699_364818_1"/>
+      <ownedAttribute xmi:id="_be00301_1077726770128_871366_1" ID="_be00301_1077726770128_871366_1" name="Author" visibility="private" type="_9_0_2_91a0295_1110274713995_297054_0"/>
+      <ownedAttribute xmi:id="_be00301_1073394345322_922552_1" ID="_be00301_1073394345322_922552_1" name="Modification date" visibility="private" type="_be00301_1073305590699_364818_1"/>
+      <ownedAttribute xmi:id="_10_0EAPbeta_be00301_1123081772498_901864_356" ID="_10_0EAPbeta_be00301_1123081772498_901864_356" name="base_Diagram" visibility="private" type="_9_0_62a020a_1106296071977_61607_0"/>
+      <ownedAttribute xmi:id="_16_8beta_8ca0285_1257244649124_794756_344" ID="_16_8beta_8ca0285_1257244649124_794756_344" name="Last modified by" visibility="private" type="_9_0_2_91a0295_1110274713995_297054_0"/>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Package" xmi:id="_9_0_2_be00301_1111670217596_336168_627" ID="_9_0_2_be00301_1111670217596_336168_627" name="datatypes">
+      <packagedElement xsi:type="uml:DataType" xmi:id="_be00301_1073305590699_364818_1" ID="_be00301_1073305590699_364818_1" name="date"/>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Extension" xmi:id="_10_0EAPbeta_be00301_1123081772498_531863_355" ID="_10_0EAPbeta_be00301_1123081772498_531863_355" memberEnd="_10_0EAPbeta_be00301_1123081772498_435993_357 _10_0EAPbeta_be00301_1123081772498_901864_356">
+      <ownedEnd xsi:type="uml:ExtensionEnd" xmi:id="_10_0EAPbeta_be00301_1123081772498_435993_357" ID="_10_0EAPbeta_be00301_1123081772498_435993_357" name="extension_DiagramInfo" visibility="private" type="_9_0_be00301_1108044380615_150487_0" aggregation="composite"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Profile" xmi:id="_9_0_be00301_1108050582343_527400_10847" ID="_9_0_be00301_1108050582343_527400_10847" name="StandardProfileL2" visibility="public">
+    <packagedElement xsi:type="uml:Extension" xmi:id="_10_0EAPbeta_be00301_1123081772478_425419_349" ID="_10_0EAPbeta_be00301_1123081772478_425419_349" visibility="public" memberEnd="_10_0EAPbeta_be00301_1123081772478_585204_351 _10_0EAPbeta_be00301_1123081772478_490431_350">
+      <ownedEnd xsi:type="uml:ExtensionEnd" xmi:id="_10_0EAPbeta_be00301_1123081772478_585204_351" ID="_10_0EAPbeta_be00301_1123081772478_585204_351" name="extension_modelLibrary" visibility="private" type="magicdraw_1046861421236_39100_29" aggregation="composite"/>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Stereotype" xmi:id="magicdraw_1046861421236_39100_29" ID="magicdraw_1046861421236_39100_29" name="ModelLibrary" visibility="public">
+      <ownedAttribute xmi:id="_10_0EAPbeta_be00301_1123081772478_490431_350" ID="_10_0EAPbeta_be00301_1123081772478_490431_350" name="base_Package" visibility="private" type="_9_0_62a020a_1105704885298_713292_7913"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Model" xmi:id="_9_0_be00301_1108053761194_467635_11463" ID="_9_0_be00301_1108053761194_467635_11463" name="UML2 Metamodel" visibility="public">
+    <appliedStereotypeInstance xmi:id="_10_0EAPbeta_be00301_1123081771126_233373_95" ID="_10_0EAPbeta_be00301_1123081771126_233373_95" visibility="public" classifier="magicdraw_1046861421236_601240_36"/>
+    <packagedElement xsi:type="uml:Class" xmi:id="_9_0_62a020a_1105704885298_713292_7913" ID="_9_0_62a020a_1105704885298_713292_7913" name="Package" visibility="public"/>
+    <packagedElement xsi:type="uml:Class" xmi:id="_9_0_62a020a_1105704884807_371561_7741" ID="_9_0_62a020a_1105704884807_371561_7741" name="Element" visibility="public"/>
+    <packagedElement xsi:type="uml:Class" xmi:id="_9_0_62a020a_1105704920340_825592_9329" ID="_9_0_62a020a_1105704920340_825592_9329" name="Model" visibility="public"/>
+    <packagedElement xsi:type="uml:Package" xmi:id="_12_0EAPbeta_be00301_1157529392394_202602_1" ID="_12_0EAPbeta_be00301_1157529392394_202602_1" name="PrimitiveTypes">
+      <packagedElement xsi:type="uml:PrimitiveType" xmi:id="_9_0_2_91a0295_1110274713995_297054_0" ID="_9_0_2_91a0295_1110274713995_297054_0" name="String"/>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Class" xmi:id="_9_0_62a020a_1106296071977_61607_0" ID="_9_0_62a020a_1106296071977_61607_0" name="Diagram"/>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Profile" xmi:id="_16_8beta_62a020a_1256807755193_508228_378" ID="_16_8beta_62a020a_1256807755193_508228_378" name="StandardProfileL3" visibility="public">
+    <packagedElement xsi:type="uml:Stereotype" xmi:id="magicdraw_1046861421236_601240_36" ID="magicdraw_1046861421236_601240_36" name="Metamodel" visibility="public">
+      <ownedAttribute xmi:id="_10_0EAPbeta_be00301_1123081771136_271406_98" ID="_10_0EAPbeta_be00301_1123081771136_271406_98" name="base_Model" visibility="private" type="_9_0_62a020a_1105704920340_825592_9329"/>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Extension" xmi:id="_10_0EAPbeta_be00301_1123081771136_824883_97" ID="_10_0EAPbeta_be00301_1123081771136_824883_97" visibility="public" memberEnd="_10_0EAPbeta_be00301_1123081771136_580423_99 _10_0EAPbeta_be00301_1123081771136_271406_98">
+      <ownedEnd xsi:type="uml:ExtensionEnd" xmi:id="_10_0EAPbeta_be00301_1123081771136_580423_99" ID="_10_0EAPbeta_be00301_1123081771136_580423_99" name="extension_metamodel" visibility="private" type="magicdraw_1046861421236_601240_36" aggregation="composite"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Package>
+</filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='proxy.local__PROJECT$h5e80cdd08691456640d6403ea4f03a_resource_com$dnomagic$dci$dmetamodel$dproject$dsnapshot' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'><project:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:project="http://www.nomagic.com/ns/cameo/client/project/1.0" xmi:id="PROJECT-efc1ee2097b1e0a2f22967b3e8679aa" description="" id="PROJECT-efc1ee2097b1e0a2f22967b3e8679aa">	<ownedSections xmi:id="_U22rAcuUEeGTNKcXcW2wuA" name="shared_model" shared="true" featuredBy="_U22rAMuUEeGTNKcXcW2wuA">		<sharePoints xmi:id="_U9HEAMuUEeGTNKcXcW2wuA" ID="_11_5_e240333_1154527540265_181005_899">			<object href="PROJECT-5e80cdd08691456640d6403ea4f03a?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_11_5_e240333_1154527540265_181005_899"></object>			<options xmi:id="_U9HEAcuUEeGTNKcXcW2wuA" key="preferredPath" value="org.andromda.profile"></options></sharePoints></ownedSections>	<ownedSections xmi:id="_U8djwMuUEeGTNKcXcW2wuA" name="commonprojectoptions" shared="true" featuredBy="_U8c8sMuUEeGTNKcXcW2wuA"></ownedSections>	<ownedSections xmi:id="_U8eK0MuUEeGTNKcXcW2wuA" name="personalprojectoptions" shared="true" belongsTo="_U8djw8uUEeGTNKcXcW2wuA" featuredBy="_U8c8sMuUEeGTNKcXcW2wuA"></ownedSections>	<userParts xmi:id="_U8djw8uUEeGTNKcXcW2wuA" user="_U8djwsuUEeGTNKcXcW2wuA" sections="_U8eK0MuUEeGTNKcXcW2wuA"></userParts>	<features xmi:id="_U22rAMuUEeGTNKcXcW2wuA" name="UML Model" namespace="com.nomagic.magicdraw.uml_model" version="17.0" sections="_U22rAcuUEeGTNKcXcW2wuA" internalVersion="1"></features>	<features xmi:id="_U8c8sMuUEeGTNKcXcW2wuA" name="Project Options" namespace="com.nomagic.magicdraw.core.project.options" version="1.0" sections="_U8djwMuUEeGTNKcXcW2wuA _U8eK0MuUEeGTNKcXcW2wuA" internalVersion="1"></features>	<features xmi:id="_U9VtgMuUEeGTNKcXcW2wuA" name="Language Properties" namespace="com.nomagic.magicdraw.ce.languageproperties" version="1.0" internalVersion="1"></features>	<features xmi:id="_U9VtgcuUEeGTNKcXcW2wuA" name="Code Engineering" namespace="com.nomagic.magicdraw.ce" version="1.0" internalVersion="1"></features>	<properties xmi:id="_U9ISIMuUEeGTNKcXcW2wuA" key="standardProfile" value="false"></properties>	<properties xmi:id="_U9ISIcuUEeGTNKcXcW2wuA" key="internalVersion" value="-1"></properties>	<projectUsers xmi:id="_U8djwsuUEeGTNKcXcW2wuA" userId="default"></projectUsers></project:Project></filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='Binaries.properties' type='XML'>#
+#Sun Jul 22 20:29:47 GMT+05:30 2012
+com.nomagic.magicdraw.uml_model.model=BINARY-6406a4bf-0935-4b0c-9339-eca4ba653901
+</filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='com.nomagic.magicdraw.ce.commoncodeengineering' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'>
+<md.ce.rt.options:Options xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:md.ce.rt.options="http://www.nomagic.com/magicdraw/ce/rt/options/1" xmi:id="_CqDjYcuUEeGTNKcXcW2wuA" tempDirectory="Active Directory" defaultWorkingDirectory="&lt;install.root>" defaultLanguage="Java" visualizationOption="1" codeGenerationReverseOption="2">
+  <defaultWorkingPackage href="PROJECT-f392a83d7e259d5a6875099f8235cf5?resource=com.nomagic.magicdraw.uml_umodel.model#eee_1045467100313_135436_1"/>
+</md.ce.rt.options:Options>
+</filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='proxy.local__PROJECT$ha3842087847353943a903d36733d6b2_resource_com$dnomagic$dci$dmetamodel$dproject$dsnapshot' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'><project:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:project="http://www.nomagic.com/ns/cameo/client/project/1.0" xmi:id="PROJECT-330c683a6ccfb2ca5ac5279313e852" description="" id="PROJECT-330c683a6ccfb2ca5ac5279313e852">	<ownedSections xmi:id="_MHDpUMuUEeGTNKcXcW2wuA" name="shared_model" shared="true" featuredBy="_MHDCQMuUEeGTNKcXcW2wuA">		<sharePoints xmi:id="_MI7RkMuUEeGTNKcXcW2wuA" ID="_12_0_12ab03bf_1166898799812_358986_99">			<object href="PROJECT-a3842087847353943a903d36733d6b2?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_12_0_12ab03bf_1166898799812_358986_99"></object>			<options xmi:id="_MI7RkcuUEeGTNKcXcW2wuA" key="preferredPath" value="org.andromda.profile"></options></sharePoints></ownedSections>	<ownedSections xmi:id="_MH4vwcuUEeGTNKcXcW2wuA" name="commonprojectoptions" shared="true" featuredBy="_MH4vwMuUEeGTNKcXcW2wuA"></ownedSections>	<ownedSections xmi:id="_MH6k88uUEeGTNKcXcW2wuA" name="personalprojectoptions" shared="true" belongsTo="_MH6k8suUEeGTNKcXcW2wuA" featuredBy="_MH4vwMuUEeGTNKcXcW2wuA"></ownedSections>	<userParts xmi:id="_MH6k8suUEeGTNKcXcW2wuA" user="_MH6k8cuUEeGTNKcXcW2wuA" sections="_MH6k88uUEeGTNKcXcW2wuA"></userParts>	<features xmi:id="_MHDCQMuUEeGTNKcXcW2wuA" name="UML Model" namespace="com.nomagic.magicdraw.uml_model" version="17.0" sections="_MHDpUMuUEeGTNKcXcW2wuA" internalVersion="1"></features>	<features xmi:id="_MH4vwMuUEeGTNKcXcW2wuA" name="Project Options" namespace="com.nomagic.magicdraw.core.project.options" version="1.0" sections="_MH4vwcuUEeGTNKcXcW2wuA _MH6k88uUEeGTNKcXcW2wuA" internalVersion="1"></features>	<features xmi:id="_MJUTIMuUEeGTNKcXcW2wuA" name="Language Properties" namespace="com.nomagic.magicdraw.ce.languageproperties" version="1.0" internalVersion="1"></features>	<features xmi:id="_MJUTIcuUEeGTNKcXcW2wuA" name="Code Engineering" namespace="com.nomagic.magicdraw.ce" version="1.0" internalVersion="1"></features>	<properties xmi:id="_MI8fsMuUEeGTNKcXcW2wuA" key="standardProfile" value="false"></properties>	<properties xmi:id="_MI8fscuUEeGTNKcXcW2wuA" key="internalVersion" value="-1"></properties>	<projectUsers xmi:id="_MH6k8cuUEeGTNKcXcW2wuA" userId="default"></projectUsers></project:Project></filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='proxy.local__PROJECT$hc4761dfa50bf72fb60693efc8193242_resource_com$dnomagic$dmagicdraw$duml_umodel$dshared_umodel$dsnapshot' type='XML' header='&lt;?xml version=&quot;1.0&quot; encoding=&quot;ASCII&quot;?&gt;'>
+<uml:Profile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.nomagic.com/magicdraw/UML/2.4.1" xmi:id="_11_5_e240333_1154527378140_885914_432" ID="_11_5_e240333_1154527378140_885914_432" name="andromda-presentation" visibility="public">
+  <appliedStereotypeInstance xmi:id="_17_0_1_2e90116_1302124509023_912630_1516" ID="_17_0_1_2e90116_1302124509023_912630_1516" visibility="public">
+    <classifier xsi:type="uml:Stereotype" href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#magicdraw_1046861421236_39100_29"/>
+  </appliedStereotypeInstance>
+</uml:Profile>
+</filePart>
+	</xmi:Extension>
+	<xmi:Extension extender='MagicDraw UML 17.0.2'>
+		<filePart name='Records.properties' type='BINARY'>H4sIAAAAAAAAAL1YSW8TMRS+51dEIjeUkfelUg60QohKLCq9cIq8PLeDMosmEyD/HtOmLU070AR7Dkk89vP78r3Nb/zqrKla05e2XJX9dgp1320nr75s6un5ZjUlZErQCdEnTE3ffbh8jfgJRXEKk0nbNT+3xapxZrVcfr74dP727HJ2TRCnTlvqLfOKBgshUEaEwtgELI1YdrBuNp2DpWuqma+bylyVbuZdOfMV9KZqPKxmPir/Bq6f+XVt2vV10y/GhZuclrXpSlgXcamFro/DxTNzA1agxnBEvbSCO2yEJxwbwCCMVUSCSmyETGhpud38+M78mPlNtVpudqjra9OBf3jMwvQw7AHeYIXEnnpQQcsYaXFkgwEumZABaZeV+DjgA8yDICqa2WmPOQZHrRfcECbAMix1Vt5jQE9iLq+b2qzmUUuxU1Lc6yhc00Gxy46iafuyqWMJ2O3Zze+mF+lUDfjCMSmwDzENbJAkWIGEphCcwpoSRrI6YxTsyYDlIBqvqpraRXGor8oaoCvrq8Vh4kPan/PLrYI9B//n/gGvclDIeY+U0JhxIRjy8UPBsICoyerUMaAT9wpJeI8D/ijeXFnc/pe71cLD2nVl2zfdH8PHQfbSTftI9yf7XVzua30iMJAbv1neyt18D2TAntQT3rHGlese6piYN57YkWq78rvpwUMLtY+r21WUesL/kM2JT+8jW7JccJPT9x/fXHydxxQVhtkwR5ryObPIzTWleg4uzhrBqUZ4cYDsgNWk1irmB9aeEy4IszZ2WgwEYOG1klkTdBTspB3PkbGSB2yAmaGKEaSkYpJGzzNqdGyoqZCUemHz9g+jYA+dNSSiO6mAKSqJMCjEgi+JcuAwYizvUTMG9lAkU02Miq9MQHjMJCOU5EjroAjlLvADsV/YtOfETFupjkzZTGgD3JSUnCvQhLCAMfMceTA4Wtlgh3HqcpQJLWnneyS1PGBpK86xF2F50NK+hR7JLRPaZAcw/0e9WrxQbsBW3kmuKBeWElDYa+sYVVGT8rFwGJX6RjQXXNralORcHQU7sVeTEB8H/OFe7LnL8L8tpu09j0yETGiTXwSukqoxGQAA</filePart>
+	</xmi:Extension>
+</xmi:XMI>
