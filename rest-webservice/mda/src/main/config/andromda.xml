@@ -1,0 +1,252 @@
+<andromda xmlns="http://andromda.org/core/configuration">
+    <!-- See http://docs.andromda.org/configuration.html for andromda.xml properties documentation -->
+    <properties>
+        <property name="modelValidation">${validation}</property>
+        <property name="xmlValidation">true</property>
+        <property name="failOnValidationErrors">true</property>
+        <property name="outputEncoding">UTF-8</property>
+        <!-- Comma separated list of cartridges to be processed by namespace name, such as java,webservice. Empty = true = process all -->
+        <property name="cartridgeFilter">${filter}</property>
+        <!-- Debug andromda processing using example log4j.xml file -->
+        <!--property name="loggingConfigurationUri">file:${project.basedir}/log4j.xml</property-->
+    </properties>
+    <!-- Server will load and validate model in the background automatically when anything changes.
+    To start server from mda directory: mvn andromda:start-server.
+    Leave commented, or else AndroMDA will try to connect each time.>
+    <server>
+        <host>localhost</host>
+        <port>4447</port>
+    </server -->
+    <repositories>
+        <repository name="emf-uml22">
+            <models>
+                <model type="emf-uml22">
+                    <uri>${model.uri}</uri>
+                    <!-- List any additional referenced models needed for code generation here, even if already referenced internally within the model file -->
+                    <!--uri>file:${project.basedir}/src/main/uml/AdditionalModel.emx</uri-->
+                    <moduleSearchLocations>
+                        <location patterns="**/*.uml,**/*.e*x">${project.basedir}/src/main/uml</location>
+                        <location patterns="**/${andromda.version}/*.e*x">${settings.localRepository}/org/andromda/profiles/emf/rsm75</location>
+                        <location patterns="**/${andromda.version}/*.uml">${settings.localRepository}/org/andromda/profiles/emf/uml22</location>
+                    </moduleSearchLocations>
+                    <!-- Can filter in/out specific model packages (in UML notation) to generate code from (default true=process all) -->
+                    <!--modelPackages>
+                        <modelPackage process="false">org::andromda::sample::notprocessed</modelPackage>
+                    </modelPackages-->
+                    <!-- Can filter in/out specific andromda model validation constraints (default true=validate all) -->
+                    <!--constraints enforceAll="true">
+                        <constraint enforce="false">**::wrapped primitive attribute should not be required</constraint>
+                        <constraint enforce="false">**::wrapped primitive parameter should not be required</constraint>
+                        <constraint enforce="false">**::wrapped primitive operation return should not be required</constraint>
+                        <constraint enforce="false">**::primitive attribute must be required</constraint>
+                        <constraint enforce="false">**::primitive operation return must be required</constraint>
+                        <constraint enforce="false">**::primitive parameter must be required</constraint>
+                        <constraint enforce="false">org::andromda::metafacades::uml::Entity::entities can only generalize other entities</constraint>
+                        <constraint enforce="false">org::andromda::metafacades::uml::Entity::entity must have at least one primary key</constraint>
+                    </constraints-->
+                </model>
+            </models>
+        </repository>
+    </repositories>
+    <!-- The mappingsSearchLocations are used by the below '*MappingsUri' namespace
+      properties (e.g. languageMappingsUri) so that we can use a "logical" name from the content
+      of any *.xml files in the search locations (instead of having to specify explicit paths...).
+      Except for 'profileMappingsUri', this approach did not seem to work as there is no
+      "logical" mapping name. mappingsUri is specified without 'Mappings' suffix on file name.
+      See http://docs.andromda.org/mappings.html.
+      A default empty mda/src/main/config/mappings/JavaMappings.xml is provided with the generated project.
+      It can be used to customize mappings from UML to Java datatypes used by all cartridges. -->
+    <mappingsSearchLocations>
+        <!-- Add additional mappings files under mda/src/main/config/mappings, referenced by languageMappingsUri -->
+        <location patterns="*.xml">${conf.dir}/mappings</location>
+    </mappingsSearchLocations>
+    <!-- To add/remove an additional cartridge to the code generation process (i.e. modeldump):
+    - Add the namespace elements to andromda.xml
+    - Add the cartridge dependency (including version) to mda/pom.xml
+    - Add additional build dependencies to individual project pom.xml files -->
+    <namespaces>
+        <!-- namespace property values used by ALL cartridges -->
+        <!-- Variable references refer to properties defined in root pom.xml or mda/pom.xml files -->
+        <!-- See http://www.andromda.org/docs/andromda-metafacades/andromda-uml-metafacades/andromda-metafacades-emf-uml2/namespace.html -->
+        <namespace name="default">
+            <properties>
+                <!-- Use enums, strongly typed collections with templates, and @annotation markups -->
+                <property name="enableTemplating">true</property>
+                <property name="enableAnnotations">true</property>
+                <property name="typeSafeEnumsEnabled">true</property>
+                <!-- Replaces default JavaMappings with customized mappings which extend Java, for PrimitiveTypes etc. -->
+                <property name="languageMappingsUri">JavaMappings</property>
+                <property name="wrapperMappingsUri">JavaWrapper</property>
+                <property name="sqlMappingsUri">${sql.mappings}</property>
+                <property name="jdbcMappingsUri">JDBC</property>
+                <property name="maxSqlNameLength">30</property>
+                <property name="foreignKeySuffix">_FK</property>
+                <property name="ejbJndiNamePrefix">${application.id}-${project.version}</property>
+                <!-- masking properties configure the way your model element names are generated -->
+                <property name="modelElementNameMask">noaccent</property>
+                <!-- property name="classifierNameMask">none</property>
+                <property name="operationNameMask">none</property>
+                <property name="roleNameMask">none</property>
+                <property name="enumerationNameMask">none</property>
+                <property name="entityNameMask">none</property>
+                <property name="entityPropertyNameMask">none</property>
+                <property name="parameterNameMask">none</property -->
+                <property name="xmlEncoding">ISO-8859-1</property>
+                <property name="enumerationLiteralNameMask">upperunderscore</property>
+                <property name="hibernateVersion">${hibernate.version}</property>
+                <property name="hibernateEntityAnnotations">false</property>
+                <property name="persistenceContainerName">jboss</property>
+                <!-- Override default @todo to set to Eclipse default>
+                <property name="toDoTag">TODO</property -->
+                <!-- Automatically makes English names plural (generally adds s if missing).
+                default=true, set to false if using non-English models or Jaxb/CXF 2.0 or JAXB simpleBindingMode=false.>
+                <property name="pluralizeAssociationEndNames">true</property>
+                <property name="pluralizeAttributeNames">true</property>
+                <property name="pluralizeParameterNames">true</property -->
+                <!-- JDK5 error on @Override on methods implemented from Interfaces -->
+                <property name="javaVersion">${javaVersion}</property>
+                <!-- CXF Only - output @XmlSeeAlso annotations and java2ws for CXF 2.1 and later -->
+                <property name="cxfVersion">${cxf.version}</property>
+                <!-- Output WSDL XSD and JAXB object attributes as XML attributes instead of XML Elements -->
+                <property name="xmlAttributes">true</property>
+                <!-- Jaxb2 Adapter classes for customized parse/print, non-standard Java datatypes -->
+                <property name="XMLDateAdapter"></property>
+                <property name="XMLDateTimeAdapter"></property>
+                <property name="XMLTimeAdapter"></property>
+                <!-- Needed to prevent Integer - BigInteger mismatch with CXF JAXB generated client code -->
+                <!--property name="XMLIntegerAdapter"></property>
+                <property name="XMLLongAdapter"></property-->
+                <!-- Needed to convert from primitive to wrapped Boolean for the correct get/isBoolean accessor from Jaxb2 -->
+                <property name="XMLBooleanAdapter"></property>
+                <!-- Allow new optional unexpected elements in XML, for forward compatibility -->
+                <property name="customValidators">javax.xml.bind.helpers.IgnoreUnexpectedElementsHandler</property>
+            </properties>
+        </namespace>
+        <!-- See http://docs.andromda.org/andromda-cartridges/andromda-spring-cartridge/namespace.html -->
+        <namespace name="spring">
+            <properties>
+               <!-- uncomment to use the context configured datasource
+                <property name="dataSource">${dataSource}</property>
+                -->
+                <property name="username">${jdbc.username}</property>
+                <property name="password">${jdbc.password}</property>
+                <property name="driver">${jdbc.driver}</property>
+                <property name="connectionUrl">${jdbc.url}</property>
+                <property name="hibernateDialect">${hibernate.dialect}</property>
+                <property name="hibernateHbm2DDLAuto">update</property>
+                <property name="hibernateQueryUseNamedParameters">true</property>
+                <property name="hibernateEnableCache">false</property>
+                <property name="sessionFactory">org.springframework.orm.hibernate3.LocalSessionFactoryBean</property>
+                <property name="localTransactionManager">org.springframework.orm.hibernate3.HibernateTransactionManager</property>
+                <property name="hibernateCacheProvider">net.sf.ehcache.hibernate.EhCacheProvider</property>
+                <property name="hibernateQueryCacheFactory">org.hibernate.cache.StandardQueryCacheFactory</property>
+                <property name="mergeMappingsUri">file:${conf.dir}/mappings/SpringMergeMappings.xml</property>
+                <property name="transactionManager">org.springframework.orm.hibernate3.HibernateTransactionManager</property>
+                <property name="hibernateInheritanceStrategy">${hibernate.inheritance.strategy}</property>
+                <property name="springTypesPackage">${application.package}</property>
+                <!-- Specialized use: OSGI, RichClient, remoting, generated JDBC tests -->
+                <!--property name="advice-impls">${core.generated.dir}</property>
+                <property name="remoting-war-support">${core.manual.java.dir}</property>
+                <property name="open-session-in-view">${core.manual.java.dir}</property>
+                <property name="client-config">${core.manual.test.dir}</property>
+                <property name="client">${core.manual.java.dir}</property>
+                <property name="client-test">${core.manual.test.dir}</property>
+                <property name="osgi">${core.generated.dir}</property-->
+                <property name="daos">${core.generated.dir}</property>
+                <property name="dao-impls">${core.manual.java.dir}</property>
+                <property name="spring-configuration">${core.generated.dir}</property>
+                <property name="server-test-config">${core.manual.test.resources}</property>
+                <property name="server-test">${core.generated.test.dir}</property>
+                <property name="services">${core.generated.dir}</property>
+                <property name="service-impls">${core.manual.java.dir}</property>
+                <property name="service-interfaces">${core.generated.dir}</property>
+                <property name="criteria">${common.generated.dir}</property>
+                <property name="value-objects">${common.generated.dir}</property>
+            </properties>
+        </namespace>
+        <!-- See http://docs.andromda.org/andromda-cartridges/andromda-hibernate-cartridge/namespace.html -->
+        <namespace name="hibernate">
+            <properties>
+                <property name="hibernateEnableCache">false</property>
+                <property name="hibernateEnableAssociationsCache">false</property>
+                <property name="hibernateTypeMappingsUri">Hibernate</property>
+                <property name="hibernateInheritanceStrategy">${hibernate.inheritance.strategy}</property>
+                <property name="defaultHibernateGeneratorClass">${hibernate.generatorClass}</property>
+                <property name="hibernateAggregationCascade">delete</property>
+                <property name="hibernateDefaultCascade">none</property>
+                <property name="entities">${core.generated.dir}</property>
+                <property name="entity-impls">${core.manual.java.dir}</property>
+                <property name="entity-mappings">${core.generated.dir}</property>
+                <property name="user-types">${core.generated.dir}</property>
+                <property name="customTypesPackage">${application.package}</property>
+                <property name="compositionDefinesEagerLoading">true</property>
+                <property name="cache">${core.generated.dir}</property>
+            </properties>
+        </namespace>
+        <!-- See http://docs.andromda.org/andromda-cartridges/andromda-webservice-cartridge/namespace.html -->
+        <namespace name="webservice">
+            <properties>
+                <property name="soapStack">cxf</property>
+                <property name="cxfVersion">${cxf.version}</property>
+                <!-- CXF Only - supports SOAP 1.1 and 1.2. Default=1.1>
+                <property name="soapVersion">1.2</property -->
+                <property name="springVersion">3.0</property>
+                <property name="schemaTypeMappingsUri">XmlSchema</property>
+                <property name="languageMappingsUri">JavaMappings</property>
+                <property name="defaultProvider">RPC</property>
+                <property name="applicationName">${application.id}</property>
+                <property name="wsdlSoapAddress">http://${service.host}:${service.port}/${application.id}-ws/services</property>
+                <property name="webserviceTypesPackage">${application.package}</property>
+                <property name="ejbInterfacePattern">{0}.ejb.{1}</property>
+                <property name="ejbHomeInterfacePattern">{0}.ejb.{1}Home</property>
+                <!-- maxOccurs=unlimited is generated instead of arrayOf<> wrapper types -->
+                <property name="useArrayWrapper">false</property>
+                <property name="reverseNamespace">true</property>
+                <property name="defaultStyle">document</property>
+                <property name="defaultUse">literal</property>
+                <property name="defaultParameterStyle">wrapped</property>
+                <!--Use minOccurs=0 for elements and required=false for attributes, instead of nillable=true-->
+                <property name="makeNillable">false</property>
+                <!--WSDL imports XSD, package must be stereotyped with 'XMLSchema' so that imported xsd file is created.-->
+                <property name="importedXSD">true</property>
+                <property name="simpleBindingMode">true</property>
+                <!-- CXF XJC binding arguments, using Jaxb2 commons plugins which must be added to %JAXB_HOME%\commons directory. Suggested value:
+                     -Xcommons-lang,-Xcommons-lang:ToStringStyle=DEFAULT_STYLE,-Xdefault-value,-Xvalue-constructor,-Xcollection-setter-injector,-simple-preserve -->
+                <property name="xjcArguments">-Xts,-Xts:style:simple,-Xdv</property>
+                <!-- webserviceHost:webservicePort/webContext/servicesPath used in wsdl and spring configuration -->
+                <property name="webserviceHost">${service.host}</property>
+                <property name="webservicePort">${service.port}</property>
+                <property name="webContext">${application.id}-webservice</property>
+                <property name="servicesPath">services</property>
+                <!-- Creates default/dummy implementation for service, iterating down through parameter hierarchy -->
+                <property name="generateMethodImpl">true</property>
+                <property name="wsdls">${webservice.generated.dir}/wsdl</property>
+                <property name="configuration">${webservice.generated.dir}</property>
+                <property name="webservice-project">${webservice.project}</property>
+                <property name="webservice-types">${core.generated.dir}</property>
+                <property name="webservice-impl">${webservice.manual.java.dir}</property>
+                <property name="webservice-tests">${webservice.test.dir}</property>
+                <property name="core-tests">${core.manual.test.dir}</property>
+                <property name="service-impls">${core.manual.java.dir}</property>
+                <property name="jaxb-impl">${common.manual.dir}</property>
+                <property name="jaxb-gen">${common.generated.dir}</property>
+            </properties>
+        </namespace>
+        <!-- See http://docs.andromda.org/andromda-cartridges/andromda-java-cartridge/namespace.html -->
+        <namespace name="java">
+            <properties>
+                <!-- Do not create XML schema ArrayOf wrapper objects -->
+                <property name="useArraysForMultiplicitiesOfTypeMany">false</property>
+                <!-- ValueObjects have JAXB2 XmlAttribute/XmlElement annotations -->
+                <property name="XMLBindingAnnotations">true</property>
+                <property name="generateEqualPropertiesMethod">true</property>
+                <property name="enumerations">${common.generated.dir}</property>
+                <property name="exceptions">${common.generated.dir}</property>
+                <property name="value-objects">${common.generated.dir}</property>
+                <property name="interfaces">${common.generated.dir}</property>
+                <property name="services">${core.generated.dir}</property>
+                <property name="service-impls">${core.manual.java.dir}</property>
+            </properties>
+        </namespace>
+    </namespaces>
+</andromda>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<jboss-web>
+    <!-- Override the default parent first classloading to load war/ear jar files first, because
+    some CXF dependent jars need to be above the JBoss and JDK 1.6 embedded jar files
+    -->
+    <class-loading java2ClassLoadingCompliance="false">
+        <loader-repository>
+            <loader-repository-config>java2ParentDelegation=false</loader-repository-config>
+        </loader-repository>
+    </class-loading>
+</jboss-web>
