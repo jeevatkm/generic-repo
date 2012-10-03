@@ -327,7 +327,7 @@
                         <artifactId>abdera-extensions-json</artifactId>
                     </exclusion> -->
                     <!-- Remove exclusion if using REST -->
-                    <!-- <exclusion>
+                    <exclusion>
                         <groupId>org.apache.ws.commons.axiom</groupId>
                         <artifactId>axiom-api</artifactId>
                     </exclusion>
@@ -338,7 +338,7 @@
                     <exclusion>
                         <groupId>jaxen</groupId>
                         <artifactId>jaxen</artifactId>
-                    </exclusion> -->
+                    </exclusion>
                 </exclusions>
             </dependency>
             <!-- CXF bundle dependencies needed for build that should not be bundled with artifact, especially for WebSphere-->
