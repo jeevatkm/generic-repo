@@ -34,11 +34,9 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 /**
- * @desc Sorting - Generic Comparator
+ * Sorting - Generic Comparator
  * 
- * @filename GenericComparator.java
  * @author <a href="mailto:jeeva@myjeeva.com">Jeevanandam Madanagopal</a>
- * @copyright &copy; 2010-2012 www.myjeeva.com
  */
 public final class GenericComparator implements Comparator, Serializable {    
 	private static final long serialVersionUID = -2293914106471884607L;	

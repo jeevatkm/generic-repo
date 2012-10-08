@@ -35,11 +35,9 @@ import com.myjeeva.comparator.GenericComparator;
 import com.myjeeva.comparator.example.vo.PersonVO;
 
 /**
- * @desc Demonstration of GenericComparator
+ * Demonstration of GenericComparator
  * 
- * @filename SampleUsageGenericComparator.java
  * @author <a href="mailto:jeeva@myjeeva.com">Jeevanandam Madanagopal</a>
- * @copyright &copy; 2010-2012 www.myjeeva.com
  */
 @SuppressWarnings("unchecked")
 public class SampleUsageGenericComparator {

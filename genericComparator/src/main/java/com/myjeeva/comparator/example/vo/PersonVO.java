@@ -28,11 +28,9 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @desc Sample Value object used of Sorting purpose demonstrating Generic Comparator 
+ * Sample Value object used of Sorting purpose demonstrating Generic Comparator 
  * 
- * @filename PersonVO.java
  * @author <a href="mailto:jeeva@myjeeva.com">Jeevanandam Madanagopal</a>
- * @copyright &copy; 2010-2012 www.myjeeva.com
  */
 public class PersonVO implements Serializable {
 	
