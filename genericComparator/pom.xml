@@ -30,8 +30,12 @@
                 <email>jeeva@myjeeva.com</email>
         </developer>
     </developers>
+    
+    <properties>
+		<javadoc.output.basepath>${basedir}/javadoc/docs</javadoc.output.basepath>
+	</properties>
 
-<!-- Dependencies -->
+	<!-- Dependencies -->
     <dependencies>
 		<dependency>
                 <groupId>commons-logging</groupId>
@@ -52,10 +56,29 @@
                                     <target>1.6</target>
                                     <fork>false</fork>
                                     <compilerArguments>
-                                            <Xmaxerrs>1000</Xmaxerrs>
+                                    	<Xmaxerrs>1000</Xmaxerrs>
                                     </compilerArguments>
                             </configuration>
                     	</plugin>
+                    	<plugin>
+					        <groupId>org.apache.maven.plugins</groupId>
+					        <artifactId>maven-javadoc-plugin</artifactId>
+					        <version>2.9</version>
+					        <configuration>
+					        	<doctitle>${project.name}(${project.version})</doctitle>
+					        	<validateLinks>true</validateLinks>
+					        	<detectLinks>true</detectLinks>
+					        	<charset>UTF-8</charset>
+					        	<header>${project.name}</header>
+					        	<bottom><![CDATA[<div class="license-info">Copyright &#169; 2010-2012 <a href="http://www.myjeeva.com" target="_blank">www.myjeeva.com</a>, All rights reserved. <br/><br/><span>The copyright of the pages and contents on this website is with myjeeva.com and the content is licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank">Creative Commons Attribution-Share Alike 3.0 Unported License</a>. Libraries and code snippets on myjeeva.com has license information.</span></div>]]> </bottom>
+					        	<footer>${project.name}</footer>
+					        	<stylesheetfile>${basedir}/javadoc/stylesheets/stylesheet.css</stylesheetfile>
+					        	<docfilessubdirs>true</docfilessubdirs>
+					        	<verbose>true</verbose>
+					        	<reportOutputDirectory>${javadoc.output.basepath}</reportOutputDirectory>
+					        	<destDir>${project.version}</destDir>
+						  	</configuration>
+					      </plugin>
                     </plugins>
          </pluginManagement>
       </build>	
