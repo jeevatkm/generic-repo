@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Title		: sample project for Active Directory Java program
+	Copyright	: (c) 2010-2012 www.myjeeva.com
+	@filename	: pom.xml 
+	@author		: <a href="jeeva@myjeeva.com">Jeevanandam Madanagopal</a>
+	@date		: April 26, 2012 12:58:34 PM GMT+05:30
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+	<groupId>com.myjeeva</groupId>
+	<artifactId>ActiveDirectoryJava</artifactId>
+	<packaging>jar</packaging>
+	<name>Active Directory Java</name>
+	<version>1.0</version>
+	<description>Project of Active Directory Java with Sample</description>
+	<url>http://www.myjeeva.com</url>
+	<licenses>
+		<license>
+			<name>The MIT License (MIT)</name>
+			<url>http://www.opensource.org/licenses/mit-license.php</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<developers>
+        <developer>
+                <id>jeevatkm</id>
+                <name>Jeevanandam Madanagopal</name>
+                <email>jeeva@myjeeva.com</email>
+        </developer>
+    </developers>
+     
+    <build>
+          <defaultGoal>install</defaultGoal>
+
+          <pluginManagement>
+                  <plugins>
+     					<plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-compiler-plugin</artifactId>
+                            <configuration>
+                                    <source>1.6</source>
+                                    <target>1.6</target>
+                                    <fork>false</fork>
+                                    <compilerArguments>
+                                            <Xmaxerrs>1000</Xmaxerrs>
+                                    </compilerArguments>
+                            </configuration>
+                    	</plugin>
+                    </plugins>
+         </pluginManagement>
+      </build>	
+</project>
